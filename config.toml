@@ -1,37 +1,64 @@
-title = "Daniel Tedman"
-baseURL = "https://dbtedman.github.io/"
+baseurl = "localhost"
+title = "My Blog"
 languageCode = "en-us"
-theme = "ananke"
-DefaultContentLanguage = "en"
-SectionPagesMenu = "main"
-
-[languages]
-[languages.en]
-title = "Daniel Tedman"
-weight = 1
-contentDir = "content/en"
-
-[sitemap]
-changefreq = "monthly"
-priority = 0.5
-filename = "sitemap.xml"
+theme = "hello-friend-ng"
+paginate = 10
 
 [params]
-favicon = ""
-site_logo = ""
-description = "The last theme you'll ever need. Maybe."
-facebook = ""
-twitter = ""
-instagram = ""
-youtube = ""
-github = "https://github.com"
-gitlab = ""
-linkedin = "https://www.linkedin.com/in/dbtedman"
-mastodon = ""
-slack = ""
-stackoverflow = ""
-rss = ""
-# choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-background_color_class = "bg-dark-gray"
-#featured_image = "/images/gohugo-default-sample-hero-image.jpg"
-recent_posts_number = 2
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+#footerLeft = "left"
+footerRight = "Using <a href='https://themes.gohugo.io/hugo-theme-hello-friend-ng/'>Hello Friend NG</a> Theme"
+# Subtitle for home
+homeSubtitle = "As a Professional Software Engineer, I am committed to participating in the development of a secure and accessible web."
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+# Enable sharing buttons, if you like
+enableSharingButtons = true
+# Metadata mostly used in document's head
+description = "As a Professional Software Engineer, I am committed to participating in the development of a secure and accessible web."
+keywords = ""
+images = [""]
+
+[[params.social]]
+name = "email"
+url = "mailto:dbtedman@gmail.com"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/dbtedman"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/dbtedman"
+
+[taxonomies]
+category = "blog"
+tag = "tags"
+series = "series"
+
+[languages]
+
+[languages.en]
+title = "Daniel Tedman"
+subtitle = "As a Professional Software Engineer, I am committed to participating in the development of a secure and accessible web."
+keywords = ""
+copyright = 'Daniel Tedman'
+readOtherPosts = ""
+disableKinds = "RSS"
+
+[languages.en.params.logo]
+logoText = "Daniel Tedman"
+logoHomeLink = "/"
+
+# or
+#
+# path = "/img/your-example-logo.svg"
+# alt = "Your example logo alt text"
+# And you can even create generic menu
+[[menu.main]]
+identifier = "my-work"
+name = "My Work"
+url = "/my-work"

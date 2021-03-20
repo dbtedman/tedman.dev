@@ -2,7 +2,7 @@
   "name": "profile",
   "private": true,
   "scripts": {
-    "_prettier": "prettier './**/*.{md,yml,yaml,json,js,xml}'",
+    "_prettier": "prettier './**/*.{md,yml,yaml,json,js,xml,toml}'",
     "build": "echo 'Building...'",
     "format": "yarn _prettier --write",
     "lint": "yarn _prettier --check",
@@ -11,7 +11,8 @@
   "devDependencies": {
     "@prettier/plugin-xml": "0.12.0",
     "husky": "4.3.7",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "prettier-plugin-toml": "0.3.1"
   },
   "license": "MIT",
   "author": {
