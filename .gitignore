@@ -1,0 +1,13 @@
+# Don't include Yarn dependencies
+/node_modules/
+
+/public/
+
+# Don't include IDE configuraiton
+/.idea/
+
+# Don't include coverage reports
+/coverage.txt
+
+# Keep this file even if directory has been ignored
+!.keep
