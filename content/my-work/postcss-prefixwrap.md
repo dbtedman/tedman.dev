@@ -1,8 +1,19 @@
 ---
-title: "PostCSS Prefix Wrap (Open Source)"
-description: "A PostCSS plugin that is used to wrap css styles with a css selector to constrain their affect on parent elements in a page."
-featured_image: ""
 date: 2016-01-01T00:00:00+10:00
+description: "A PostCSS plugin that is used to wrap css styles with a css selector to constrain their affect on parent elements in a page."
+tags:
+    [
+        CSS,
+        GitHub,
+        GitHub Actions,
+        Jest,
+        Node,
+        Open Source,
+        PostCSS,
+        TypeScript,
+        Yarn,
+    ]
+title: "PostCSS Prefix Wrap (Open Source)"
 type: page
 ---
 
