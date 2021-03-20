@@ -10,8 +10,8 @@ jobs:
         runs-on: ubuntu-18.04
         steps:
             - uses: actions/checkout@v1
-              # with:
-              #   submodules: true
+              with:
+                  submodules: true
 
             - name: Setup Hugo
               uses: peaceiris/actions-hugo@v2
@@ -19,7 +19,7 @@ jobs:
                   hugo-version: "0.59.1"
 
             - name: Build
-              run: hugo --minify
+              run: hugo --minify && ls -al && ls -al /public
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v2
