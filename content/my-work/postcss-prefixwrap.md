@@ -17,6 +17,10 @@ title: "PostCSS Prefix Wrap (Open Source)"
 type: page
 ---
 
+```shell
+yarn add --dev --exact postcss-prefixwrap
+```
+
 A PostCSS plugin that is used to wrap css styles with a css selector to constrain their affect on parent elements in a page.
 
 **2016 - Now**
@@ -34,7 +38,3 @@ A PostCSS plugin that prefixes each CSS selector of your application with a cust
 ## My Contribution
 
 As the primary developer for this plugin, I have been responsible for all aspects of its development accept for the kind contributions I have received from the wider open source community.
-
-### Key Technologies and Services
-
-[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [GitHub](https://github.com/), [GitHub Actions](https://github.com/features/actions), [Jest](https://jestjs.io/), [Node](https://nodejs.org/en/), [PostCSS](https://postcss.org/), [TypeScript](https://www.typescriptlang.org/), [Yarn](https://yarnpkg.com/)

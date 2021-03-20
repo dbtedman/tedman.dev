@@ -46,11 +46,3 @@ that represent some of APNIC’s members.
 ## My Contribution
 
 As the primary developer on this project, I have contributed to all aspects of the development and planning activities.
-
-### Key Technologies and Services
-
-[Docker](https://www.docker.com/), [Gulp](https://gulpjs.com/), [Helm](https://helm.sh/)
-, [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [Kubernetes](https://kubernetes.io/)
-, [Labs on Demand](https://www.learnondemandsystems.com/), [MariaDB](https://mariadb.org/), [Node](https://nodejs.org)
-, [NPM](https://www.npmjs.com/), [PHP](https://www.php.net/), [Redis](https://redis.io/), [Scss](https://sass-lang.com/)
-, [WordPress](https://wordpress.org/), [Zoom](https://zoom.us/)

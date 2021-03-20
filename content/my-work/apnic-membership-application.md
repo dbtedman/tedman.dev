@@ -1,7 +1,34 @@
 ---
-title: "APNIC Membership Application"
-description: "Application form used by prospective APNIC Members to join APNIC and request Internet Resources."
 date: 2019-01-01T00:00:00+10:00
+description: "Application form used by prospective APNIC Members to join APNIC and request Internet Resources."
+tags:
+    [
+        Babel,
+        Bash,
+        Docker,
+        EditorConfig,
+        ESLint,
+        Git,
+        GitLab,
+        GitLab CI,
+        Helm,
+        Java,
+        JavaScript,
+        Jest,
+        JSON,
+        JUnit,
+        Kubernetes,
+        Maven,
+        Node,
+        NPM,
+        Prettier,
+        Scss,
+        Spring,
+        VueCLI,
+        VueJS,
+        WebPack,
+    ]
+title: "APNIC Membership Application"
 ---
 
 ![Screenshot](/images/my-work/apnic-membership-application.png)
@@ -27,7 +54,3 @@ To assist in reducing the number of fraudulent applications, we leveraged the AP
 ## My Contribution
 
 As a full stack web developer, my contribution was primarily focused on implementing the VueJS SPA and associated build and release automation. Jest automated testing was implemented to assist in validating functionality and reducing the risk of future changes. When needed, I had also contributed to the Java based BFF.
-
-### Key Technologies and Services
-
-[Babel](https://babeljs.io/), [Bash](https://www.gnu.org/software/bash/), [Docker](https://www.docker.com/), [EditorConfig](https://editorconfig.org/), [ESLint](https://eslint.org/), [Git](https://git-scm.com/), [GitLab](https://about.gitlab.com/), [GitLab CI](https://docs.gitlab.com/ee/ci/), [Helm](https://helm.sh/), [Java](https://www.oracle.com/java/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [Jest](https://jestjs.io/), [JSON](https://www.json.org), [JUnit](https://junit.org), [Kubernetes](https://kubernetes.io/), [Maven](https://maven.apache.org/), [Node](https://nodejs.org), [NPM](https://www.npmjs.com/), [Prettier](https://prettier.io/), [Scss](https://sass-lang.com/), [Spring](https://spring.io/), [VueCLI](https://cli.vuejs.org/), [VueJS](https://vuejs.org/), [WebPack](https://webpack.js.org/)
