@@ -4,9 +4,10 @@
 
 # Don't touch build output
 /public/
+/resources/_gen/
 
 # Don't touch 3rd party theme
-/themes/ananke/
+/themes/
 
 # Don't touch IDE configuraiton
 /.idea/

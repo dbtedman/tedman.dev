@@ -2,6 +2,7 @@
 /node_modules/
 
 /public/
+/resources/_gen/
 
 # Don't include IDE configuraiton
 /.idea/
