@@ -1,0 +1,29 @@
+---
+name: "ci"
+
+on:
+    pull_request: {}
+    push:
+        branches:
+            - "master"
+
+env:
+    CI: true
+
+jobs:
+    run:
+        runs-on: "ubuntu-latest"
+
+        steps:
+            - uses: "actions/checkout@v1"
+
+            - name: "Prepare Node"
+              uses: "actions/setup-node@v1"
+              with:
+                  node-version: "15.6.0"
+
+            - name: "Install"
+              run: "yarn install --no-audit"
+
+            - name: "Lint"
+              run: "./bin/lint"

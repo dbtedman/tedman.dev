@@ -1,0 +1,22 @@
+{
+  "name": "marshal",
+  "private": true,
+  "description": "Secure web platform used to methodically assemble and arrange ideas.",
+  "scripts": {
+    "_prettier": "prettier './**/*.{md,yml,yaml,json,js,xml}'",
+    "build": "echo 'Building...'",
+    "format": "yarn _prettier --write",
+    "lint": "yarn _prettier --check",
+    "test": "yarn lint"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "0.12.0",
+    "husky": "4.3.7",
+    "prettier": "2.2.1"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Tedman",
+    "url": "https://danieltedman.com"
+  }
+}

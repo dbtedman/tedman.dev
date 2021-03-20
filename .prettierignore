@@ -1,0 +1,12 @@
+# Don't touch Yarn dependencies
+/node_modules/
+/yarn.lock
+
+# Don't touch build output
+/public/
+
+# Don't touch 3rd party theme
+/themes/ananke/
+
+# Don't touch IDE configuraiton
+/.idea/

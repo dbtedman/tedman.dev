@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+DIR_ROOT="${DIR/\/bin/}"
+DIR_CURRENT=$(pwd)
+
+cd "${DIR}" || exit
+source ./_shared
+
+cd "${DIR_ROOT}" || exit
+
+task="Format"
+
+info_message "${task} // Begin"
+
+info_message "${task} // Prettier Format"
+ensure yarn format
+
+success_message "${task} // End"
+
+cd "${DIR_CURRENT}" || exit
