@@ -1,7 +1,6 @@
 {
-  "name": "marshal",
+  "name": "profile",
   "private": true,
-  "description": "Secure web platform used to methodically assemble and arrange ideas.",
   "scripts": {
     "_prettier": "prettier './**/*.{md,yml,yaml,json,js,xml}'",
     "build": "echo 'Building...'",
