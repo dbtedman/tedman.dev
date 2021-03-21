@@ -22,12 +22,12 @@ jobs:
               uses: "actions/setup-node@v1"
               with:
                   node-version: "15.6.0"
-                  extended: true
 
             - name: "Setup Hugo"
               uses: "peaceiris/actions-hugo@v2"
               with:
                   hugo-version: "0.81.0"
+                  extended: true
 
             - name: "Install"
               run: "yarn install --no-audit"
