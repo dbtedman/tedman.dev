@@ -1,29 +1,36 @@
 ---
-name: "ci"
+name: "ci-pr"
 
 on:
     pull_request: {}
-    push:
-        branches:
-            - "master"
 
 env:
     CI: true
 
 jobs:
     run:
-        runs-on: "ubuntu-latest"
+        runs-on: "ubuntu-20.04"
 
         steps:
             - uses: "actions/checkout@v1"
+              with:
+                  submodules: true
 
             - name: "Prepare Node"
               uses: "actions/setup-node@v1"
               with:
                   node-version: "15.6.0"
 
+            - name: "Setup Hugo"
+              uses: "peaceiris/actions-hugo@v2"
+              with:
+                  hugo-version: "0.81.0"
+
             - name: "Install"
               run: "yarn install --no-audit"
 
             - name: "Lint"
               run: "./bin/lint"
+
+            - name: "Build"
+              run: "hugo --minify"
