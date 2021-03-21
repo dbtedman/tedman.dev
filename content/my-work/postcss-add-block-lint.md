@@ -2,7 +2,7 @@
 date: 2019-01-01T00:00:00+10:00
 description: "A PostCSS plugin that is used to lint css for existence of classes that might trigger add blockers."
 tags: [Git, GitHub, GitHub Actions, Node, NPM, Open Source, PostCSS, TypeScript]
-title: "PostCSS Add Block Lint"
+title: "PostCSS Add Block Lint (Open Source)"
 ---
 
 A PostCSS plugin that is used to lint css for existence of classes that might trigger add blockers.
