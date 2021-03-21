@@ -1,14 +1,15 @@
 ---
-title: "Marshal (Open Source)"
-description: ""
 date: 2021-01-01T00:00:00+10:00
+description: "Secure web platform used to methodically assemble and arrange ideas."
+tags: [Go, Open Source]
+title: "Marshal (Open Source)"
 ---
 
-_Content to come._
+Secure web platform used to methodically assemble and arrange ideas.
 
 2021 - Now
 
-[github.com/dbtedman/TBC](https://github.com/dbtedman/TBC)
+[github.com/dbtedman/marshal](https://github.com/dbtedman/marshal)
 
 ## Community Need
 
@@ -19,9 +20,5 @@ _Content to come._
 _Content to come._
 
 ## My Contribution
-
-_Content to come._
-
-### Key Technologies and Services
 
 _Content to come._

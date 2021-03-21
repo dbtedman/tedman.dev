@@ -4,7 +4,7 @@ description: "A guide to Griffith University's academic and research expertise."
 date: 2014-01-01T00:00:00+10:00
 ---
 
-![Screenshot](/images/my-work/???.png)
+![Screenshot](/images/my-work/griffith-experts.png)
 
 A guide to Griffith University's academic and research expertise.
 

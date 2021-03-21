@@ -1,5 +1,7 @@
 # [Portfolio](https://github.com/dbtedman/portfolio)
 
+[![ci results](https://github.com/dbtedman/portfolio/workflows/ci/badge.svg)](https://github.com/dbtedman/portfolio/actions?workflow=ci-master)
+
 Hugo source code for [https://dbtedman.github.io/](https://dbtedman.github.io/).
 
 -   [How to contribute?](#how-to-contribute)

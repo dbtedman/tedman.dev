@@ -1,7 +1,7 @@
 ---
 date: 2021-01-01T00:00:00+10:00
 description: "Campus headquarters for your personal learning platform."
-tags: [Open Source]
+tags: [Go, Open Source]
 title: "Campus HQ (Open Source)"
 ---
 
