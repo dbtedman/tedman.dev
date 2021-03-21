@@ -1,5 +1,4 @@
-baseurl = "localhost"
-title = "My Blog"
+title = "Daniel Tedman"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 paginate = 100
