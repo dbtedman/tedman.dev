@@ -1,5 +1,5 @@
 ---
-date: 2016-01-01T00:00:00+10:00
+date: 2016-07-27T00:00:00+10:00
 description: "A PostCSS plugin that is used to wrap css styles with a css selector to constrain their affect on parent elements in a page."
 tags:
     [

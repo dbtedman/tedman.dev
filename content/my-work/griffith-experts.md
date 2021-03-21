@@ -1,7 +1,48 @@
 ---
-title: "Griffith Experts"
-description: "A guide to Griffith University's academic and research expertise."
 date: 2014-01-01T00:00:00+10:00
+description: "A guide to Griffith University's academic and research expertise."
+tags:
+    [
+        Ant,
+        Bamboo,
+        Bash,
+        Bower,
+        CentOS,
+        EditorConfig,
+        ESLint,
+        FreeMarker,
+        Git,
+        GitLab,
+        Gradle,
+        Groovy,
+        Grunt,
+        Java,
+        JavaScript,
+        Jira,
+        JUnit,
+        Markdown,
+        Mustache,
+        MySQL,
+        Node,
+        NPM,
+        Puppet,
+        Puppet Librarian,
+        PyLint,
+        Python,
+        RDF,
+        Redis,
+        RHEL,
+        Ruby,
+        Ruby Gems,
+        SassLint,
+        Scss,
+        Solr,
+        SPARQL,
+        Tomcat,
+        Vagrant,
+        VIVO,
+    ]
+title: "Griffith Experts"
 ---
 
 ![Screenshot](/images/my-work/griffith-experts.png)
@@ -21,7 +62,3 @@ Griffith Experts was built on a customized version of the VIVO platform, a Java 
 ## My Contribution
 
 Initially I worked as a front-end developer but transitioned to looking after all aspects of the platforms development.
-
-### Key Technologies and Services
-
-[Ant](https://ant.apache.org/), [Bamboo](https://www.atlassian.com/software/bamboo), [Bash](https://www.gnu.org/software/bash/), [Bower](https://bower.io/), [CentOS](https://www.centos.org/), [EditorConfig](https://editorconfig.org/), [ESLint](https://eslint.org/), [FreeMarker](https://freemarker.apache.org/), [Git](https://git-scm.com/), [GitLab](https://about.gitlab.com/), [Gradle](https://gradle.org/), [Groovy](https://groovy-lang.org/), [Grunt](https://gruntjs.com/), [Java](https://www.oracle.com/au/java/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [Jira](https://www.atlassian.com/software/jira), [JUnit](https://junit.org), [Markdown](https://daringfireball.net/projects/markdown/syntax), [Mustache](https://mustache.github.io/), [MySQL](https://www.mysql.com/), [Node](https://nodejs.org), [NPM](https://www.npmjs.com/), [Puppet](https://puppet.com/), [Puppet Librarian](http://librarian-puppet.com/), [PyLint](https://www.pylint.org/), [Python](https://www.python.org/), [RDF](https://www.w3.org/RDF/), [Redis](https://redis.io/), [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), [Ruby](https://www.ruby-lang.org), [Ruby Gems](https://rubygems.org/), [SassLint](https://www.npmjs.com/package/sass-lint), [Scss](https://sass-lang.com/), [Solr](https://lucene.apache.org/solr/), [SPARQL](https://www.w3.org/TR/sparql11-overview/), [Tomcat](https://tomcat.apache.org/), [Vagrant](https://www.vagrantup.com/), [VIVO](https://duraspace.org/vivo/)

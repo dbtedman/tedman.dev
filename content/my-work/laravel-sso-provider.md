@@ -1,5 +1,5 @@
 ---
-date: 2016-01-01T00:00:00+10:00
+date: 2016-11-10T00:00:00+10:00
 description: Provides custom SSO integration to Laravel 5 applications.
 tags: [Composer, GitHub, Laravel, Open Source, Packagist, PHP, PHPUnit]
 title: Laravel SSO Provider (Open Source)
@@ -22,7 +22,3 @@ A simple Composer plugin was implemented to connect between Laravel’s builtin 
 ## My Contribution
 
 As the only developer of this plugin, I was responsible for all aspects of its development.
-
-### Key Technologies and Services
-
-[Composer](https://getcomposer.org/), [GitHub](https://github.com/), [Laravel](https://laravel.com/), [Packagist](https://packagist.org/), [PHP](https://www.php.net/), [PHPUnit](https://phpunit.de/)

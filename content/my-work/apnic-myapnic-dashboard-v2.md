@@ -1,19 +1,26 @@
 ---
-title: "APNIC MyAPNIC Dashboard v2"
-description: "Content to come."
 date: 2021-01-01T00:00:00+10:00
+description: ""
+tags:
+    [
+        APNIC,
+        Docker,
+        Helm,
+        Jest,
+        Kubernetes,
+        MySQL,
+        Node,
+        NPM,
+        PHP,
+        Redis,
+        Scss,
+        TypeScript,
+        VueJS,
+        WordPress,
+    ]
+title: "APNIC MyAPNIC Dashboard v2"
 ---
-
-![Screenshot](/images/my-work/???.png)
-
-Content to come.
 
 **2021 - NOW**
 
-[ ](https://)
-
-## Business Need
-
-## Our Solution
-
-## My Contribution
+[my.apnic.net](https://my.apnic.net)

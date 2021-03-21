@@ -1,5 +1,5 @@
 ---
-date: 2019-01-01T00:00:00+10:00
+date: 2019-08-27T00:00:00+10:00
 description: "Tool used for populating ExLNT link check report with validation statuses."
 tags: [GitHub, GitHub Actions, JavaScript, Node, NPM, Open Source, Yarn]
 title: "ExLNT Link Check (Open Source)"

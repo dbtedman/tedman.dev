@@ -1,19 +1,11 @@
 ---
 title: "PostCSS Analyse (Open Source)"
-description: "Content to come."
-date: 2019-01-01T00:00:00+10:00
+description: "A PostCSS plugin which analyses property values to give developers insight into values which should be the same but may differ slightly."
+date: 2019-10-23T00:00:00+10:00
 ---
 
-![Screenshot](/images/my-work/???.png)
+A [PostCSS](https://postcss.org/) plugin which analyses property values to give developers insight into values which should be the same but may differ slightly.
 
-Content to come.
+**2019 - 2020**
 
-**X - NOW**
-
-[ ](https://)
-
-## Business Need
-
-## Our Solution
-
-## My Contribution
+[github.com/dbtedman/postcss-analyse](https://github.com/dbtedman/postcss-analyse)
