@@ -9,15 +9,3 @@ A [PostCSS](https://postcss.org/) plugin which analyses property values to give 
 **2019 - 2020**
 
 [github.com/dbtedman/postcss-analyse](https://github.com/dbtedman/postcss-analyse)
-
-## Community Need
-
-_Content to come._
-
-## Our Solution
-
-_Content to come._
-
-## My Contribution
-
-_Content to come._

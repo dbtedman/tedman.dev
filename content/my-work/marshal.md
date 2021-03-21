@@ -10,15 +10,3 @@ Secure web platform used to methodically assemble and arrange ideas.
 2021 - Now
 
 [github.com/dbtedman/marshal](https://github.com/dbtedman/marshal)
-
-## Community Need
-
-_Content to come._
-
-## Our Solution
-
-_Content to come._
-
-## My Contribution
-
-_Content to come._

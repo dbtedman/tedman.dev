@@ -10,15 +10,3 @@ Campus headquarters for your personal learning platform.
 2021 - Now
 
 [github.com/dbtedman/campus-hq](https://github.com/dbtedman/campus-hq)
-
-## Community Need
-
-_Content to come._
-
-## Our Solution
-
-_Content to come._
-
-## My Contribution
-
-_Content to come._

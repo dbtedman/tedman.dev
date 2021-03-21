@@ -10,15 +10,3 @@ Platform to promote the achievements of an institutions' members by highlighting
 2021 - Now
 
 [github.com/dbtedman/our-people](https://github.com/dbtedman/our-people)
-
-## Community Need
-
-_Content to come._
-
-## Our Solution
-
-_Content to come._
-
-## My Contribution
-
-_Content to come._
