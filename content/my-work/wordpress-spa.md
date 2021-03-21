@@ -1,5 +1,5 @@
 ---
-date: 2020-01-01T00:00:00+10:00
+date: 2020-09-12T00:00:00+10:00
 description: "A demonstration project showing how WordPress can be used as an API backend to a Single Page Application (SPA) frontend."
 tags: [Open Source, PHP, TypeScript, VueJS, WordPress]
 title: "WordPress SPA (Open Source)"

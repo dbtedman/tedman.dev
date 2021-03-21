@@ -1,5 +1,5 @@
 ---
-date: 2020-01-01T00:00:00+10:00
+date: 2020-06-26T00:00:00+10:00
 description: "Providing respite by matching desired capacity to available talent."
 tags: [Go, Open Source]
 title: "Respite (Open Source)"
