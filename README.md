@@ -2,7 +2,7 @@
 
 [![ci results](https://github.com/dbtedman/portfolio/workflows/ci/badge.svg)](https://github.com/dbtedman/portfolio/actions?workflow=ci-master)
 
-Hugo source code for [https://dbtedman.github.io/](https://dbtedman.github.io/).
+Hugo source code for [https://danieltedman.com/](https://danieltedman.com/).
 
 -   [How to contribute?](#how-to-contribute)
 -   [Is this project secure?](#is-this-project-secure)
