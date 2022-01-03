@@ -11,13 +11,13 @@ dateformNumTime = "2006-01-02 15:04"
 #footerLeft = "left"
 footerRight = "Using <a href='https://themes.gohugo.io/hugo-theme-hello-friend-ng/'>Hello Friend NG</a> Theme"
 # Subtitle for home
-homeSubtitle = "As a Professional Software Engineer, I am committed to participating in the development of a secure and accessible web."
+homeSubtitle = "As a Security Focused Software Engineer, I am committed to participating in the development of a secure and accessible web."
 # Set disableReadOtherPosts to true in order to hide the links to other posts.
 disableReadOtherPosts = false
 # Enable sharing buttons, if you like
 enableSharingButtons = true
 # Metadata mostly used in document's head
-description = "As a Professional Software Engineer, I am committed to participating in the development of a secure and accessible web."
+description = "As a Security Focused Software Engineer, I am committed to participating in the development of a secure and accessible web."
 keywords = ""
 images = [""]
 
@@ -42,7 +42,7 @@ series = "series"
 
 [languages.en]
 title = "Daniel Tedman"
-subtitle = "As a Professional Software Engineer, I am committed to participating in the development of a secure and accessible web."
+subtitle = "As a Security Focused Software Engineer, I am committed to participating in the development of a secure and accessible web."
 keywords = ""
 copyright = 'Daniel Tedman'
 readOtherPosts = ""
