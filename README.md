@@ -1,6 +1,7 @@
 # [Portfolio](https://github.com/dbtedman/portfolio)
 
-[![CI GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/portfolio/ci?style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/portfolio/actions/workflows/ci.yml)
+[![CI PR GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/portfolio/ci-pr?style=for-the-badge&logo=github&label=ci%20pr)](https://github.com/dbtedman/portfolio/actions/workflows/ci-pr.yml)
+[![CI Master GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/portfolio/ci-master?style=for-the-badge&logo=github&label=ci%20master)](https://github.com/dbtedman/portfolio/actions/workflows/ci-master.yml)
 
 Hugo source code for [https://danieltedman.com/](https://danieltedman.com/).
 
