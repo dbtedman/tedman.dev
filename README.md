@@ -4,23 +4,27 @@
 
 Hugo source code for [https://danieltedman.com/](https://danieltedman.com/).
 
--   [How to contribute?](#how-to-contribute)
--   [Is this project secure?](#is-this-project-secure)
--   [How is the project structured?](#how-is-the-project-structured)
+-   [Getting Started](#getting-started)
+-   [Verification](#verification)
 -   [License](#license)
 
-## How to contribute?
+## Getting Started
 
-Read our [Contributing Guide](CONTRIBUTING.md) to learn more about how to contribute to this project, and our [Changelog](CHANGELOG.md) to see what has already been implemented.
+```shell
+hugo server
+```
 
-## Is this project secure?
+## Verification
 
-Read our [Security Guide](SECURITY.md) to learn how security is considered during the development and operation of this
-plugin.
+### Linting
 
-## How is the project structured?
+```shell
+./bin/lint
+```
 
-Read our [Architecture Document](ARCHITECTURE.md) to learn how this project is structured.
+```shell
+./bin/format
+```
 
 ## License
 
