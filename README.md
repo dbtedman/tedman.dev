@@ -12,7 +12,7 @@ Hugo source code for [https://danieltedman.com/](https://danieltedman.com/).
 ## Getting Started
 
 ```shell
-hugo server
+make install && hugo server
 ```
 
 ## Verification
@@ -20,11 +20,11 @@ hugo server
 ### Linting
 
 ```shell
-./bin/lint
+make lint
 ```
 
 ```shell
-./bin/format
+make format
 ```
 
 ## Design

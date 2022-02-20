@@ -1,6 +1,6 @@
 # Don't touch Yarn dependencies
 /node_modules/
-/yarn.lock
+/pnpm-lock.yaml
 
 # Don't touch build output
 /public/
