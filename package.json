@@ -1,22 +1,14 @@
 {
-  "name": "profile",
   "private": true,
   "scripts": {
-    "_prettier": "prettier './**/*.{md,yml,yaml,json,js,xml,toml}'",
-    "build": "echo 'Building...'",
-    "format": "yarn _prettier --write",
-    "lint": "yarn _prettier --check",
-    "test": "yarn lint"
+    "_prettier": "prettier './**/*.{md,yml,yaml,json,js}'",
+    "format": "sort-package-json && pnpm run _prettier -- --write",
+    "lint": "sort-package-json --check && pnpm run _prettier -- --check"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "1.2.0",
     "husky": "7.0.4",
     "prettier": "2.5.1",
-    "prettier-plugin-toml": "0.3.1"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Daniel Tedman",
-    "url": "https://danieltedman.com"
+    "sort-package-json": "1.54.0"
   }
 }

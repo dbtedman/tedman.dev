@@ -5,7 +5,7 @@ paginate = 100
 
 [params]
 dateform = "Jan 2, 2006"
-dateformShort = "Jan 2"
+dateformShort = " "
 dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
 #footerLeft = "left"
@@ -52,12 +52,17 @@ disableKinds = "RSS"
 logoText = "Daniel Tedman"
 logoHomeLink = "/"
 
-# or
-#
-# path = "/img/your-example-logo.svg"
-# alt = "Your example logo alt text"
-# And you can even create generic menu
+[[menu.main]]
+identifier = "code-kata"
+name = "Code Kata"
+url = "/code-kata"
+
 [[menu.main]]
 identifier = "my-work"
 name = "My Work"
 url = "/my-work"
+
+[[menu.main]]
+identifier = "open-source"
+name = "Open Source"
+url = "/open-source"

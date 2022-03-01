@@ -1,26 +1,35 @@
 # [Portfolio](https://github.com/dbtedman/portfolio)
 
-[![ci results](https://github.com/dbtedman/portfolio/workflows/ci/badge.svg)](https://github.com/dbtedman/portfolio/actions?workflow=ci-master)
+[![CI GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/portfolio/ci-master?style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/portfolio/actions/workflows/ci-master.yml)
 
 Hugo source code for [https://danieltedman.com/](https://danieltedman.com/).
 
--   [How to contribute?](#how-to-contribute)
--   [Is this project secure?](#is-this-project-secure)
--   [How is the project structured?](#how-is-the-project-structured)
+-   [Getting Started](#getting-started)
+-   [Verification](#verification)
+-   [Design](#design)
 -   [License](#license)
 
-## How to contribute?
+## Getting Started
 
-Read our [Contributing Guide](CONTRIBUTING.md) to learn more about how to contribute to this project, and our [Changelog](CHANGELOG.md) to see what has already been implemented.
+```shell
+make install serve
+```
 
-## Is this project secure?
+## Verification
 
-Read our [Security Guide](SECURITY.md) to learn how security is considered during the development and operation of this
-plugin.
+### Linting
 
-## How is the project structured?
+```shell
+make lint
+```
 
-Read our [Architecture Document](ARCHITECTURE.md) to learn how this project is structured.
+```shell
+make format
+```
+
+## Design
+
+> Placeholder
 
 ## License
 
