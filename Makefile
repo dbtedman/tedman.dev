@@ -3,10 +3,13 @@
 all: install lint
 
 install:
-	pnpm install
+	@pnpm install
 
 lint:
 	@pnpm run lint
 
 format:
 	@pnpm run format
+
+serve:
+	@hugo server
