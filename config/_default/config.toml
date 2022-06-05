@@ -51,18 +51,3 @@ disableKinds = "RSS"
 [languages.en.params.logo]
 logoText = "Daniel Tedman"
 logoHomeLink = "/"
-
-[[menu.main]]
-identifier = "code-kata"
-name = "Code Kata"
-url = "/code-kata"
-
-[[menu.main]]
-identifier = "my-work"
-name = "My Work"
-url = "/my-work"
-
-[[menu.main]]
-identifier = "open-source"
-name = "Open Source"
-url = "/open-source"

@@ -1,9 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "_prettier": "prettier './**/*.{md,yml,yaml,json,js}'",
-    "format": "sort-package-json && pnpm run _prettier -- --write",
-    "lint": "sort-package-json --check && pnpm run _prettier -- --check"
+    "format": "sort-package-json && prettier . --write",
+    "lint": "sort-package-json --check && prettier . --check"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "1.2.0",
