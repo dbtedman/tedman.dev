@@ -8,6 +8,8 @@ Hugo source code for [https://danieltedman.com/](https://danieltedman.com/).
 -   [Getting Started](#getting-started)
 -   [Verification](#verification)
 -   [Design](#design)
+-   [Security](#security)
+-   [References](#references)
 -   [License](#license)
 
 ## Getting Started
@@ -24,14 +26,32 @@ make install serve
 make lint
 ```
 
+These rules can then be automatically applied:
+
 ```shell
 make format
 ```
 
 ## Design
 
-> Placeholder
+### Stack
+
+-   [✅ Dependabot (docs.github.com)](https://docs.github.com/en/code-security/dependabot)
+-   [✅ GitHub Actions (github.com)](https://github.com/features/actions)
+-   [✅ Husky (typicode.github.io)](https://typicode.github.io/husky/#/)
+-   [✅ Node Version Manager (github.com)](https://github.com/nvm-sh/nvm)
+-   [✅ NodeJS (nodejs.org)](https://nodejs.org/en/)
+-   [✅ PNPM (pnpm.io)](https://pnpm.io/)
+-   [✅ Prettier (prettier.io)](https://prettier.io/)
+
+## Security
+
+(placeholder)
+
+## References
+
+> 💡 Resources referenced during the development of this project.
 
 ## License
 
-The [MIT License](./LICENSE.md) is used by this project.
+See [LICENSE.md](./LICENSE.md) for details.
