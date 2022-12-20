@@ -6,12 +6,13 @@ on:
         branches:
             - "main"
 
-#permissions: "read-all"
+permissions: "read-all"
 
 jobs:
-    run:
+    deploy:
         runs-on: "ubuntu-latest"
-
+        permissions:
+            contents: "write"
         steps:
             - uses: "actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8"
               with:
@@ -29,12 +30,9 @@ jobs:
                   extended: true
             - run: "make install"
             - run: "hugo --minify"
-            - uses: "peaceiris/actions-gh-pages@v2"
-              env:
-                  ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-                  EXTERNAL_REPOSITORY: "dbtedman/dbtedman.github.io"
-                  PUBLISH_BRANCH: "master"
-                  PUBLISH_DIR: ./public
+            - uses: "peaceiris/actions-gh-pages@de7ea6f8efb354206b205ef54722213d99067935"
               with:
-                  emptyCommits: false
-                  commitMessage: ${{ github.event.head_commit.message }}
+                  deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+                  external_repository: "dbtedman/dbtedman.github.io"
+                  publish_branch: "master"
+                  publish_dir: ./public
