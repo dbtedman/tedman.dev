@@ -1,5 +1,5 @@
 ---
-name: "ci-pr"
+name: "ci"
 
 on:
     pull_request: {}
