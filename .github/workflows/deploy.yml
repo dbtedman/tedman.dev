@@ -4,23 +4,22 @@ name: "deploy"
 on:
     push:
         branches:
-            - main
+            - "main"
 
-env:
-    CI: true
+#permissions: "read-all"
 
 jobs:
     run:
-        runs-on: "ubuntu-20.04"
+        runs-on: "ubuntu-latest"
 
         steps:
-            - uses: "actions/checkout@v1"
+            - uses: "actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8"
               with:
                   submodules: true
-            - uses: "pnpm/action-setup@v2.0.1"
+            - uses: "pnpm/action-setup@c3b53f6a16e57305370b4ae5a540c2077a1d50dd"
               with:
                   version: "latest"
-            - uses: "actions/setup-node@v2"
+            - uses: "actions/setup-node@8c91899e586c5b171469028077307d293428b516"
               with:
                   node-version-file: ".nvmrc"
                   cache: "pnpm"
@@ -29,7 +28,6 @@ jobs:
                   hugo-version: "0.81.0"
                   extended: true
             - run: "make install"
-            - run: "make lint"
             - run: "hugo --minify"
             - uses: "peaceiris/actions-gh-pages@v2"
               env:
