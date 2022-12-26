@@ -1,10 +1,10 @@
 .DEFAULT_GOAL := all
 
 .PHONY: all
-all: install lint
+all: install lint build
 
 .PHONY: pre_commit
-pre_commit: lint
+pre_commit: lint build
 
 .PHONY: install
 install:
@@ -17,6 +17,10 @@ lint:
 .PHONY: format
 format:
 	@pnpm run format
+
+.PHONY: build
+build:
+	@hugo
 
 .PHONY: serve
 serve:

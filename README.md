@@ -15,7 +15,7 @@ Hugo source code for [https://danieltedman.com/](https://danieltedman.com/).
 ## Getting Started
 
 ```shell
-make install serve
+nvm use && make install serve
 ```
 
 ## Verification
@@ -34,6 +34,13 @@ make format
 
 ## Design
 
+### Repository Structure
+
+| Directory  | Purpose                                          |
+| ---------- | ------------------------------------------------ |
+| `.github/` | Dependabot configuration and pipeline workflows. |
+| `.husky/`  | Husky git hook configuration.                    |
+
 ### Stack
 
 -   [✅ Dependabot (docs.github.com)](https://docs.github.com/en/code-security/dependabot)
@@ -46,7 +53,8 @@ make format
 
 ## Security
 
-(placeholder)
+Read our [Security Guide](SECURITY.md) to learn how security is considered during the development and operation of this
+plugin.
 
 ## References
 
