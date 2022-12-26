@@ -20,7 +20,7 @@ format:
 
 .PHONY: build
 build:
-	@hugo
+	@hugo --minify
 
 .PHONY: serve
 serve:
