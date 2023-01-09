@@ -15,7 +15,7 @@ homeSubtitle = "As a Security Focused Software Engineer, I am committed to parti
 # Set disableReadOtherPosts to true in order to hide the links to other posts.
 disableReadOtherPosts = false
 # Enable sharing buttons, if you like
-enableSharingButtons = true
+enableSharingButtons = false
 # Metadata mostly used in document's head
 description = "As a Security Focused Software Engineer, I am committed to participating in the development of a secure and accessible web."
 keywords = ""
@@ -51,3 +51,12 @@ disableKinds = "RSS"
 [languages.en.params.logo]
 logoText = "Daniel Tedman"
 logoHomeLink = "/"
+
+[menu]
+    [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+
+[permalinks]
+posts = "/posts/:title/"
