@@ -14,13 +14,13 @@ jobs:
         permissions:
             contents: "write"
         steps:
-            - uses: "actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b"
+            - uses: "actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c"
               with:
                   submodules: true
             - uses: "pnpm/action-setup@c3b53f6a16e57305370b4ae5a540c2077a1d50dd"
               with:
                   version: "latest"
-            - uses: "actions/setup-node@8c91899e586c5b171469028077307d293428b516"
+            - uses: "actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c"
               with:
                   node-version-file: ".nvmrc"
                   cache: "pnpm"
@@ -30,7 +30,7 @@ jobs:
                   extended: true
             - run: "make install"
             - run: "hugo --minify"
-            - uses: "peaceiris/actions-gh-pages@de7ea6f8efb354206b205ef54722213d99067935"
+            - uses: "peaceiris/actions-gh-pages@64b46b4226a4a12da2239ba3ea5aa73e3163c75b"
               with:
                   deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
                   external_repository: "dbtedman/dbtedman.github.io"
