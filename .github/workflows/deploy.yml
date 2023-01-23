@@ -30,7 +30,7 @@ jobs:
                   extended: true
             - run: "make install"
             - run: "hugo --minify"
-            - uses: "peaceiris/actions-gh-pages@64b46b4226a4a12da2239ba3ea5aa73e3163c75b"
+            - uses: "peaceiris/actions-gh-pages@bd8c6b06eba6b3d25d72b7a1767993c0aeee42e7"
               with:
                   deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
                   external_repository: "dbtedman/dbtedman.github.io"
