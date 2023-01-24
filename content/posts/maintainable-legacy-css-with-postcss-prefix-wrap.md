@@ -45,7 +45,7 @@ You can install the package from NPM, [postcss-prefixwrap](https://www.npmjs.com
 [![NPM Downloads Per Week](https://img.shields.io/npm/dw/postcss-prefixwrap?color=blue&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/postcss-prefixwrap)
 
 | Package Manager                                         | Command                                                  |
-|:--------------------------------------------------------|:---------------------------------------------------------|
+| :------------------------------------------------------ | :------------------------------------------------------- |
 | [NPM](https://www.npmjs.com/package/postcss-prefixwrap) | `npm install postcss-prefixwrap --save-dev --save-exact` |
 | [PNPM](https://pnpm.io)                                 | `pnpm add postcss-prefixwrap --save-dev --save-exact`    |
 | [Yarn](https://yarnpkg.com/package/postcss-prefixwrap)  | `yarn add postcss-prefixwrap --dev --exact`              |
