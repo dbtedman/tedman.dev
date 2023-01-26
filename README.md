@@ -1,7 +1,7 @@
-# [Portfolio](https://github.com/dbtedman/portfolio)
+# [Tedman.dev](https://github.com/dbtedman/tedman.dev)
 
-[![CI GitHub Pipeline](https://img.shields.io/github/actions/workflow/status/dbtedman/portfolio/ci.yml?branch=main&style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/portfolio/actions/workflows/ci.yml)
-[![Deploy GitHub Pipeline](https://img.shields.io/github/actions/workflow/status/dbtedman/portfolio/deploy.yml?branch=main&style=for-the-badge&logo=github&label=deploy)](https://github.com/dbtedman/portfolio/actions/workflows/deploy.yml)
+[![CI GitHub Pipeline](https://img.shields.io/github/actions/workflow/status/dbtedman/tedman.dev/ci.yml?branch=main&style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/tedman.dev/actions/workflows/ci.yml)
+[![Deploy GitHub Pipeline](https://img.shields.io/github/actions/workflow/status/dbtedman/tedman.dev/deploy.yml?branch=main&style=for-the-badge&logo=github&label=deploy)](https://github.com/dbtedman/tedman.dev/actions/workflows/deploy.yml)
 
 Hugo source code for [https://tedman.dev](https://tedman.dev).
 
