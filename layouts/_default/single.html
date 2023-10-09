@@ -1,0 +1,9 @@
+{{- define "content" -}}
+<article>
+    <h1>{{ .Title }}</h1>
+    <section class="abstract">
+        <p>{{ .Description }}</p>
+    </section>
+    <section>{{- .Content -}}</section>
+</article>
+{{- end -}}
