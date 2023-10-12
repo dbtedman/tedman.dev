@@ -1,7 +1,7 @@
 ---
 title: "Maintainable Legacy CSS With PostCSS Prefix Wrap"
 date: "2023-01-24"
-toc: true
+author: "Daniel Tedman"
 description: "Maintaining legacy CSS critical to support parts of your website that can not yet be upgraded, can be made
 maintainable with PostCSS Prefix Wrap, including third party libraries that you do not maintain."
 ---

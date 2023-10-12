@@ -1,1 +1,8 @@
-{{- define "content" -}} home.html {{- .Content -}} {{- end -}}
+{{- define "content" -}}
+<h1>{{ .Title }}</h1>
+<p>{{ .Description }}</p>
+
+<nav>
+    <a href="/posts">Posts</a>
+</nav>
+{{- end -}}

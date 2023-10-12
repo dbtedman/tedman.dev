@@ -1,7 +1,7 @@
 ---
 title: "A Reluctant Leader"
 date: "2023-01-24"
-toc: true
+author: "Daniel Tedman"
 description: "I am a Software Engineer, not a Manager. This is the story I tell myself on a regular basis since being
 promoted to a Delivery Management role. Now, after more than one year in this role, it is time to reflect on my journey
 so far. To share my experience from the perspective of a reluctant leader."
