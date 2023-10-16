@@ -3,8 +3,8 @@
 <p>{{ .Description }}</p>
 
 {{ range where .Site.RegularPages.ByDate.Reverse "File.Dir" "posts/" }}
-<article class="post-brief">
+<article>
     <a href="{{- .Permalink -}}"><h2>{{- .Title -}}</h2></a>
-    <p class="post-brief_abstract">{{- .Params.description -}}</p>
+    <p>{{- .Params.description -}}</p>
 </article>
 {{ end }} {{- end -}}
