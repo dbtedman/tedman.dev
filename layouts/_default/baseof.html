@@ -7,13 +7,21 @@
         <meta name="description" content="{{ .Description }}" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="/app.css" rel="stylesheet" />
+        {{ with resources.Get "app.scss" | toCSS | minify }}
+        <style>
+             {
+                 {
+                    .Content|safeCSS;
+                }
+            }
+        </style>
+        {{ end }}
         <link
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
             rel="stylesheet"
         />
         <link rel="sitemap" type="application/xml" href="{{- "sitemap.xml"
-        |absURL -}}" /> {{ with .Site.Home.OutputFormats.Get "rss" -}} {{ printf
+        |absURL -}}"/> {{ with .Site.Home.OutputFormats.Get "rss" -}} {{ printf
         `
         <link rel="%q" type="%q" href="%q" title="%q" />
         ` .Rel .MediaType.Type .Permalink site.Title | safeHTML }} {{ end }}
