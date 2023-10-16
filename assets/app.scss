@@ -6,6 +6,7 @@ $primary-dark-alt: #b69380;
 $primary-dark: #947767;
 $primary-light-alt: #775641;
 $primary-light: #694f3f;
+$mobile-break: 600px;
 
 html,
 body {
@@ -73,24 +74,43 @@ h1 {
     font-size: 4rem;
     line-height: 5rem;
     margin: 0 0 1.5rem 0;
+
+    @media (max-width: $mobile-break) {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
 }
 
 h2 {
     font-size: 2.5rem;
     line-height: 3rem;
     margin: 3rem 0 1rem 0;
+
+    @media (max-width: $mobile-break) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 }
 
 h3 {
     font-size: 1.8rem;
     line-height: 2.5rem;
     margin: 3rem 0 0 0;
+
+    @media (max-width: $mobile-break) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 }
 
 main {
     max-width: 40rem;
     padding: 2rem 4rem;
     margin: 0 auto;
+
+    @media (max-width: $mobile-break) {
+        padding: 1rem 2rem;
+    }
 }
 
 nav.external {
