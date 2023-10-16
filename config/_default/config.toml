@@ -1,2 +1,19 @@
 title = "Daniel Tedman"
 languageCode = "en-au"
+
+disableKinds = ["taxonomy", "term"]
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[outputs]
+home = ['html', 'rss']
+section = ['html']
+taxonomy = ['html']
+term = ['html']
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "rss"

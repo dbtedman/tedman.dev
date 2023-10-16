@@ -2,7 +2,9 @@
 <h1>{{ .Title }}</h1>
 <p>{{ .Description }}</p>
 
-<nav>
-    <a href="/posts">Posts</a>
-</nav>
-{{- end -}}
+{{ range where .Site.RegularPages.ByDate.Reverse "File.Dir" "posts/" }}
+<article class="post-brief">
+    <a href="{{- .Permalink -}}"><h2>{{- .Title -}}</h2></a>
+    <p class="post-brief_abstract">{{- .Params.description -}}</p>
+</article>
+{{ end }} {{- end -}}

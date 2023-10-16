@@ -12,8 +12,11 @@
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
             rel="stylesheet"
         />
-        <link rel="sitemap" type="application/xml" href="{{- "sitemap.xml" |
-        absURL -}}" />
+        <link rel="sitemap" type="application/xml" href="{{- "sitemap.xml"
+        |absURL -}}" /> {{ with .Site.Home.OutputFormats.Get "rss" -}} {{ printf
+        `
+        <link rel="%q" type="%q" href="%q" title="%q" />
+        ` .Rel .MediaType.Type .Permalink site.Title | safeHTML }} {{ end }}
         <script>
             document.getElementsByTagName("html")[0].classList.remove("no-js");
         </script>
