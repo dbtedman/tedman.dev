@@ -2,9 +2,20 @@
 <h1>{{ .Title }}</h1>
 <p>{{ .Description }}</p>
 
+<nav class="external">
+    <a href="mailto:dbtedman@gmail.com">Email</a>
+    <a href="https://github.com/dbtedman">GitHub</a>
+    <a href="https://www.linkedin.com/in/dbtedman">LinkedIn</a>
+</nav>
+
 {{ range where .Site.RegularPages.ByDate.Reverse "File.Dir" "posts/" }}
 <article>
-    <a href="{{- .Permalink -}}"><h2>{{- .Title -}}</h2></a>
+    <a href="{{- .Permalink -}}">
+        <h2>{{- .Title -}}</h2>
+    </a>
+    <div class="metadata">
+        <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
+    </div>
     <p>{{- .Params.description -}}</p>
 </article>
 {{ end }} {{- end -}}

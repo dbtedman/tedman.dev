@@ -6,8 +6,8 @@
 /public/
 /resources/_gen/
 
-# Don't touch 3rd party theme
-/themes/
+# Don't touch gohtml templates
+/layouts/
 
 # Don't touch IDE configuraiton
 /.idea/
