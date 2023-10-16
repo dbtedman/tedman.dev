@@ -54,6 +54,9 @@ make format
 
 > 💡 Resources referenced during the development of this project.
 
+-   [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
+-   [HTML5 Boilerplate (html5boilerplate.com)](https://html5boilerplate.com)
+
 ## License
 
 See [LICENSE.md](./LICENSE.md) for details.

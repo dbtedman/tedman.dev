@@ -1,62 +1,19 @@
 title = "Daniel Tedman"
-languageCode = "en-us"
-theme = "hello-friend-ng"
-paginate = 100
+languageCode = "en-au"
 
-[params]
-dateform = "Jan 2, 2006"
-dateformShort = " "
-dateformNum = "2006-01-02"
-dateformNumTime = "2006-01-02 15:04"
-#footerLeft = "left"
-footerRight = "Using <a href='https://themes.gohugo.io/hugo-theme-hello-friend-ng/'>Hello Friend NG</a> Theme"
-# Subtitle for home
-homeSubtitle = "As a Security Focused Software Engineer, I am committed to participating in the development of a secure and accessible web."
-# Set disableReadOtherPosts to true in order to hide the links to other posts.
-disableReadOtherPosts = false
-# Enable sharing buttons, if you like
-enableSharingButtons = false
-# Metadata mostly used in document's head
-description = "As a Security Focused Software Engineer, I am committed to participating in the development of a secure and accessible web."
-keywords = ""
-images = [""]
-
-[[params.social]]
-name = "email"
-url = "mailto:dbtedman@gmail.com"
-
-[[params.social]]
-name = "github"
-url = "https://github.com/dbtedman"
-
-[[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/dbtedman"
+disableKinds = ["taxonomy", "term"]
 
 [taxonomies]
-category = "blog"
+category = "categories"
 tag = "tags"
-series = "series"
 
-[languages]
+[outputs]
+home = ['html', 'rss']
+section = ['html']
+taxonomy = ['html']
+term = ['html']
 
-[languages.en]
-title = "Daniel Tedman"
-subtitle = "As a Security Focused Software Engineer, I am committed to participating in the development of a secure and accessible web."
-keywords = ""
-copyright = 'Daniel Tedman'
-readOtherPosts = ""
-disableKinds = "RSS"
-
-[languages.en.params.logo]
-logoText = "Daniel Tedman"
-logoHomeLink = "/"
-
-[menu]
-    [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
-
-[permalinks]
-posts = "/posts/:title/"
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "rss"

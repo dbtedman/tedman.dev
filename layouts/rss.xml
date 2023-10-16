@@ -1,0 +1,18 @@
+<rss version="2.0">
+    <channel>
+        <title>{{ .Site.Title | safeHTML }}</title>
+        <link>{{ .Permalink }}</link>
+        {{ range where .Site.RegularPages.ByDate.Reverse "File.Dir" "posts/" }}
+        <item>
+            <title>{{ .Title | safeHTML }}</title>
+            <link>{{ .Permalink }}</link>
+            <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+            {{ with .Site.Author.email }}
+            <author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>
+            {{end}}
+            <guid>{{ .Permalink }}</guid>
+            <description>{{ .Params.description | safeHTML }}</description>
+        </item>
+        {{ end }}
+    </channel>
+</rss>

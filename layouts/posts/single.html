@@ -1,0 +1,14 @@
+{{- define "content" -}}
+<article>
+    <h1>{{ .Title }}</h1>
+
+    <div class="metadata">
+        <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
+    </div>
+
+    <section class="abstract">
+        <p>{{ .Description }}</p>
+    </section>
+    <section>{{- .Content -}}</section>
+</article>
+{{- end -}}
