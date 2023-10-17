@@ -35,7 +35,7 @@
           type="application/xml"
           href="{{- "sitemap.xml" | absURL -}}"/>
     {{ with .Site.Home.OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%q" type="%q" href="%q" title="%q" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+        {{ printf `<link rel=%q type=%q href=%q title=%q />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
     <link type="text/plain" rel="author" href="{{- "humans.txt" | absURL -}}" />
 </head>
