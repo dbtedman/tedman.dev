@@ -1,0 +1,5 @@
+Hello, Internet!
+
+I am Daniel Tedman, a Security Focused Software Engineer from Australia.
+
+This website is developed in the open at https://github.com/dbtedman/tedman.dev, with source code released under the MIT license.

@@ -178,3 +178,22 @@ td {
 .breadcrumbs {
     margin-bottom: 1rem;
 }
+
+body > footer {
+    border-top: 1px solid $primary-dark;
+    max-width: 40rem;
+    margin: 0 auto;
+
+    nav {
+        padding: 1rem 0 8rem 0;
+        text-align: center;
+
+        @media (max-width: $mobile-break) {
+            padding-bottom: 4rem;
+        }
+
+        a {
+            margin-right: 0.5rem;
+        }
+    }
+}
