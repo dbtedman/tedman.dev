@@ -54,8 +54,9 @@ make format
 
 > 💡 Resources referenced during the development of this project.
 
--   [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
+-   [Feed Validation Service (validator.w3.org)](https://validator.w3.org/feed/check.cgi)
 -   [HTML5 Boilerplate (html5boilerplate.com)](https://html5boilerplate.com)
+-   [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
 
 ## License
 
