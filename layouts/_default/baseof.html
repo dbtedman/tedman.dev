@@ -2,15 +2,29 @@
 <html lang="en-au">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"/>
     <title>{{ .Title }}</title>
-    <meta name="description" content="{{ .Description }}"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <meta name="description"
+          content="{{ .Description }}"/>
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png">
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png">
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png">
+    <link rel="manifest"
+          href="/site.webmanifest">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com"/>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin/>
     {{ with resources.Get "app.scss" | toCSS | minify }}
         <style>
             {{ .Content | safeCSS }}
@@ -20,13 +34,25 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
         rel="stylesheet"
     />
-    <link rel="sitemap" type="application/xml" href="{{- "sitemap.xml"
-    |absURL -}}"/>
+    <link rel="sitemap"
+          type="application/xml"
+          href="{{- "sitemap.xml" | absURL -}}"/>
     {{ with .Site.Home.OutputFormats.Get "rss" -}}
         {{ printf `<link rel="%q" type="%q" href="%q" title="%q" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
+    <link type="text/plain" rel="author" href="{{- "humans.txt" | absURL -}}" />
 </head>
 <body>
 <main>{{ block "content" . }}{{ end }}</main>
+<footer>
+    <nav>
+        {{ with .Site.Home.OutputFormats.Get "rss" -}}
+            <a href="{{ .Permalink }}">rss</a>
+        {{ end }}
+        <a href="{{- ".well-known/security.txt" | absURL -}}">security.txt</a>
+        <a href="{{- "humans.txt" | absURL -}}">humans.txt</a>
+        <a href="https://github.com/dbtedman/tedman.dev/blob/main/LICENSE.md">license</a>
+    </nav>
+</footer>
 </body>
 </html>
