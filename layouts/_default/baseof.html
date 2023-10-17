@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-au">
+<html lang="en-au">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -25,9 +25,6 @@
     {{ with .Site.Home.OutputFormats.Get "rss" -}}
         {{ printf `<link rel="%q" type="%q" href="%q" title="%q" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
-    <script>
-        document.getElementsByTagName("html")[0].classList.remove("no-js");
-    </script>
 </head>
 <body>
 <main>{{ block "content" . }}{{ end }}</main>
