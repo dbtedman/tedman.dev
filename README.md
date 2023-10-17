@@ -49,7 +49,13 @@ make format
 
 ## Security
 
-(placeholder)
+### Security Headers
+
+An [A+ Security Report Summary (securityheaders.com)](https://securityheaders.com/?q=https%3A%2F%2Ftedman.dev&followRedirects=on) is targeted.
+
+### DNSSEC
+
+`tedman.dev` has [DNSSEC enabled (dnssec-analyzer.verisignlabs.com)](https://dnssec-analyzer.verisignlabs.com/tedman.dev).
 
 ## References
 
@@ -59,6 +65,7 @@ make format
 -   [HTML5 Boilerplate (html5boilerplate.com)](https://html5boilerplate.com)
 -   [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
 -   [Internet.nl: Website test (en.internet.nl)](https://en.internet.nl/test-site/)
+-   [Security Headers (securityheaders.com)](https://securityheaders.com)
 -   [security.txt (securitytxt.org)](https://securitytxt.org)
 
 ## License
