@@ -25,17 +25,9 @@ We begin by adding Vue support to WordPress, replacing a widget dashboard with a
 
 To prepare for replacing WordPress, we need to adjust how our authentication architecture works. We can no longer rely on WordPress session, instead, we need to authenticate with Tokens granted by OIDC. This required development of custom token authentication that established a WordPress session, but did not require a traditional WordPress login.
 
-```php
-# TODO: Implement Me!
-```
-
 ### Phase 3: Spring BFF
 
 WordPress is moved from the root path `/`, into a sub-path `/wp`. The root path `/` is now configured in Kubernetes to send traffic to a new Spring Boot application, our BFF. A single route `/` is defined that returns the `index.html` associated with Vue, along with a path to handle any static assets imported from this `index.html`.
-
-```yaml
-# TODO: Implement Me!
-```
 
 ### Phase 4: Replace WordPress WP-JSON APIs
 
