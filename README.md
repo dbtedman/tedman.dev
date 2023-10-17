@@ -57,6 +57,8 @@ make format
 -   [Feed Validation Service (validator.w3.org)](https://validator.w3.org/feed/check.cgi)
 -   [HTML5 Boilerplate (html5boilerplate.com)](https://html5boilerplate.com)
 -   [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
+-   [Internet.nl: Website test (en.internet.nl)](https://en.internet.nl/test-site/)
+-   [security.txt (securitytxt.org)](https://securitytxt.org)
 
 ## License
 
