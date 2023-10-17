@@ -25,11 +25,8 @@
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
           crossorigin/>
-    {{ with resources.Get "app.scss" | toCSS | minify }}
-        <style>
-            {{ .Content | safeCSS }}
-        </style>
-    {{ end }}
+    {{- $style := resources.Get "app.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
         rel="stylesheet"
