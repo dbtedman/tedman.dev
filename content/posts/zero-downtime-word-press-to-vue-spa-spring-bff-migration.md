@@ -8,6 +8,8 @@ topics:
     - "TypeScript"
     - "Vue"
     - "Spring Boot"
+    - "Kubernetes"
+    - "WordPress"
 ---
 
 ## The Problem
