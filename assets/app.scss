@@ -143,12 +143,14 @@ section {
 
 article {
     .metadata {
-        .date {
+        .date,
+        .topics {
             border: 1px solid $primary-light;
             color: $primary-light;
             padding: 0 0.5rem;
             display: inline-block;
             font-size: 0.8rem;
+            margin-right: 1rem;
 
             @media (prefers-color-scheme: dark) {
                 border-color: $primary-dark;
@@ -177,6 +179,14 @@ td {
 
 .breadcrumbs {
     margin-bottom: 1rem;
+
+    > span {
+        color: $primary-light-alt;
+
+        @media (prefers-color-scheme: dark) {
+            color: $primary-dark-alt;
+        }
+    }
 }
 
 body > footer {
