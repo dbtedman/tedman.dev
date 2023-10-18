@@ -1,12 +1,7 @@
-$background-dark: #1f1e1d;
-$background-light: #fff;
-$foreground-dark: #fff;
-$foreground-light: #1f1e1d;
-$primary-dark-alt: #b69380;
-$primary-dark: #947767;
-$primary-light-alt: #775641;
-$primary-light: #694f3f;
 $mobile-break: 600px;
+
+@import "colours";
+@import "syntax";
 
 html,
 body {
@@ -228,9 +223,4 @@ body > footer {
             margin-right: 0.5rem;
         }
     }
-}
-
-pre {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
 }
