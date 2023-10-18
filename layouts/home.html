@@ -15,6 +15,17 @@
     </a>
     <div class="metadata">
         <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
+        {{- if .Params.topics -}}
+            <div class="topics">
+                {{- $topics := .Param "topics" -}}
+                {{- range $topic := $topics -}}
+                    {{ $slug := $topic | anchorize }}
+                    {{- with $.Site.GetPage (printf "/%s/%s" "topics" $slug) -}}
+                        <a href="{{- .Permalink -}}">{{- .Title -}}</a>
+                    {{- end -}}
+                {{- end -}}
+            </div>
+        {{- end -}}
     </div>
     <p>{{- .Params.description -}}</p>
 </article>

@@ -1,0 +1,17 @@
+{{- define "content" -}}
+    <nav class="breadcrumbs">
+        <a href="/">Home</a>
+    </nav>
+
+    <h1>{{ .Title }}</h1>
+
+    {{- range $name, $taxonomy := $.Site.Taxonomies.topics -}}
+        {{- with $.Site.GetPage (printf "/topics/%s" $name) -}}
+            <article>
+                <a href="{{- .Permalink -}}">
+                    <h2>{{- .Title -}}</h2>
+                </a>
+            </article>
+        {{- end -}}
+    {{- end -}}
+{{- end -}}

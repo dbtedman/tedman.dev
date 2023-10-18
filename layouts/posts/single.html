@@ -1,18 +1,29 @@
 {{- define "content" -}}
-<article>
-    <nav class="breadcrumbs">
-        <a href="/">Go Home</a>
-    </nav>
+    <article>
+        <nav class="breadcrumbs">
+            <a href="/">Home</a>
+        </nav>
 
-    <h1>{{ .Title }}</h1>
+        <h1>{{ .Title }}</h1>
 
-    <div class="metadata">
-        <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
-    </div>
+        <div class="metadata">
+            <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
+            {{- if .Params.topics -}}
+                <div class="topics">
+                    {{- $topics := .Param "topics" -}}
+                    {{- range $topic := $topics -}}
+                        {{ $slug := $topic | anchorize }}
+                        {{- with $.Site.GetPage (printf "/%s/%s" "topics" $slug) -}}
+                            <a href="{{- .Permalink -}}">{{- .Title -}}</a>
+                        {{- end -}}
+                    {{- end -}}
+                </div>
+            {{- end -}}
+        </div>
 
-    <section class="abstract">
-        <p>{{ .Description }}</p>
-    </section>
-    <section>{{- .Content -}}</section>
-</article>
+        <section class="abstract">
+            <p>{{ .Description }}</p>
+        </section>
+        <section>{{- .Content -}}</section>
+    </article>
 {{- end -}}

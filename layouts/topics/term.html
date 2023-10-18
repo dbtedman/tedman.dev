@@ -1,0 +1,26 @@
+{{- define "content" -}}
+    <nav class="breadcrumbs">
+        <a href="/">Home</a>
+        <span>//</span>
+        <a href="/topics">Topics</a>
+    </nav>
+
+    <h1>{{ .Title }}</h1>
+
+    {{ $name := .Title | anchorize }}
+    {{ $taxonomy := $.Site.Taxonomies.topics.Get $name }}
+
+    {{- range $page := sort $taxonomy "Date" "desc" -}}
+        {{- with $page -}}
+            <article>
+                <a href="{{- .Permalink -}}">
+                    <h2>{{- .Title -}}</h2>
+                </a>
+                <div class="metadata">
+                    <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
+                </div>
+                <p>{{- .Params.description -}}</p>
+            </article>
+        {{- end -}}
+    {{- end -}}
+{{- end -}}

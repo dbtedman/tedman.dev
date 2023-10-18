@@ -1,11 +1,10 @@
 title = "Daniel Tedman"
 languageCode = "en-au"
 
-disableKinds = ["taxonomy", "term"]
+#disableKinds = ["taxonomy", "term"]
 
 [taxonomies]
-category = "categories"
-tag = "tags"
+topic = "topics"
 
 [outputs]
 home = ['html', 'rss']
