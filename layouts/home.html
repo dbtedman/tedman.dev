@@ -1,32 +1,23 @@
 {{- define "content" -}}
-<h1>{{ .Title }}</h1>
-<p>{{ .Description }}</p>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
 
-<nav class="external">
-    <a href="mailto:dbtedman@gmail.com">Email</a>
-    <a href="https://github.com/dbtedman">GitHub</a>
-    <a href="https://www.linkedin.com/in/dbtedman">LinkedIn</a>
-</nav>
+    <nav class="external">
+        <a href="mailto:dbtedman@gmail.com">Email</a>
+        <a href="https://github.com/dbtedman">GitHub</a>
+        <a href="https://www.linkedin.com/in/dbtedman">LinkedIn</a>
+    </nav>
 
-{{ range where .Site.RegularPages.ByDate.Reverse "File.Dir" "posts/" }}
-<article>
-    <a href="{{- .Permalink -}}">
-        <h2>{{- .Title -}}</h2>
-    </a>
-    <div class="metadata">
-        <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
-        {{- if .Params.topics -}}
-            <div class="topics">
-                {{- $topics := .Param "topics" -}}
-                {{- range $topic := $topics -}}
-                    {{ $slug := $topic | anchorize }}
-                    {{- with $.Site.GetPage (printf "/%s/%s" "topics" $slug) -}}
-                        <a href="{{- .Permalink -}}">{{- .Title -}}</a>
-                    {{- end -}}
-                {{- end -}}
+    {{ range where .Site.RegularPages.ByDate.Reverse "File.Dir" "posts/" }}
+        <article>
+            <a href="{{- .Permalink -}}">
+                <h2>{{- .Title -}}</h2>
+            </a>
+            <div class="metadata">
+                <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
+                {{- partial "list-topics.html" . -}}
             </div>
-        {{- end -}}
-    </div>
-    <p>{{- .Params.description -}}</p>
-</article>
-{{ end }} {{- end -}}
+            <p>{{- .Params.description -}}</p>
+        </article>
+    {{ end }}
+{{- end -}}

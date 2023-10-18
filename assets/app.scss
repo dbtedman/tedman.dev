@@ -143,14 +143,30 @@ section {
 
 article {
     .metadata {
-        .date,
-        .topics {
+        .date {
             border: 1px solid $primary-light;
             color: $primary-light;
             padding: 0 0.5rem;
             display: inline-block;
             font-size: 0.8rem;
             margin-right: 1rem;
+
+            @media (prefers-color-scheme: dark) {
+                border-color: $primary-dark;
+                color: $primary-dark;
+            }
+        }
+
+        .topics {
+            color: $primary-light;
+            padding: 0 0.5rem;
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-right: 1rem;
+
+            > span {
+                padding: 0 0.3em;
+            }
 
             @media (prefers-color-scheme: dark) {
                 border-color: $primary-dark;

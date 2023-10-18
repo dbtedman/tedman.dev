@@ -3,7 +3,11 @@ title: "Zero Downtime WordPress to Vue SPA & Spring BFF Migration"
 date: "2023-02-05"
 author: "Daniel Tedman"
 description: "An implemented proposal for how my team achieved zero downtime while migrating a WordPress website to a Vue SPA and Spring BFF in Kubernetes."
-topics: ["Case Study"]
+topics:
+    - "Case Study"
+    - "TypeScript"
+    - "Vue"
+    - "Spring Boot"
 ---
 
 ## The Problem

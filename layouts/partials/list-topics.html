@@ -1,0 +1,14 @@
+{{- if .Params.topics -}}
+    <div class="topics">
+        {{- $topics := .Param "topics" -}}
+        {{- range $index, $topic := sort $topics -}}
+            {{ $slug := $topic | anchorize }}
+            {{- with $.Site.GetPage (printf "/%s/%s" "topics" $slug) -}}
+                {{- if eq (eq $index 0) false -}}
+                    <span>+</span>
+                {{- end -}}
+                <a href="{{- .Permalink -}}">{{- .Title -}}</a>
+            {{- end -}}
+        {{- end -}}
+    </div>
+{{- end -}}
