@@ -43,6 +43,7 @@
 <main>{{ block "content" . }}{{ end }}</main>
 <footer>
     <nav>
+        <a href="{{- "topics" | absURL -}}">topics</a>
         {{ with .Site.Home.OutputFormats.Get "rss" -}}
             <a href="{{ .Permalink }}">rss</a>
         {{ end }}

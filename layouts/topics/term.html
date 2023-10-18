@@ -18,6 +18,7 @@
                 </a>
                 <div class="metadata">
                     <div class="date">{{ .Params.date | time.Format ":date_long" }}</div>
+                    {{- partial "list-topics.html" . -}}
                 </div>
                 <p>{{- .Params.description -}}</p>
             </article>
