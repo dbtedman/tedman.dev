@@ -24,7 +24,44 @@ Placeholder
 
 ## GitHub Actions CI
 
-Placeholder
+> ⚠️ Add details on why we need to do this.
+
+In your code repository, create a GitHub Actions workflow configuration `.github/workflows/ci.yml`, based on the following template:
+
+```yaml
+name: "ci"
+
+on:
+    pull_request:
+        branches:
+            - "main"
+    push:
+        branches:
+            - "main"
+
+permissions: "read-all"
+
+jobs:
+    linux:
+        runs-on: "ubuntu-latest"
+
+        steps:
+            - name: "Checkout Code"
+              uses: "actions/checkout@4.1.1"
+            - name: "Setup Go"
+              uses: "actions/setup-go@4.1.0"
+              with:
+                  go-version-file: "./go.mod"
+            - name: "Build"
+              uses: "goreleaser/goreleaser-action@5.0.0"
+              with:
+                  version: "latest"
+                  args: "build --clean --snapshot"
+```
+
+This configuration will cause a pipeline to execute on each commit to the `main` branch, or any Pull Requests that target `main` branch.
+
+Push the changes to your remote repository, and confirm in the GitHub UI that a pipeline has been executed.
 
 ## Go Releaser Release
 
