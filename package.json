@@ -5,9 +5,9 @@
     "lint": "sort-package-json --check && prettier . --check"
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "1.2.0",
-    "husky": "7.0.4",
-    "prettier": "2.5.1",
-    "sort-package-json": "1.54.0"
+    "@prettier/plugin-xml": "3.2.1",
+    "husky": "8.0.3",
+    "prettier": "3.0.3",
+    "sort-package-json": "2.6.0"
   }
 }
