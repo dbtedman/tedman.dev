@@ -13,11 +13,14 @@
 
 /* PreWrapper */
 .chroma {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 0.5rem 1rem;
     font-family: monospace;
     color: $code-light-foreground;
     background-color: $code-light;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    overflow-x: scroll;
 
     @media (prefers-color-scheme: dark) {
         color: $code-dark-foreground;
