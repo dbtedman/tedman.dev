@@ -36,16 +36,16 @@ make format
 
 ### Stack
 
--   [✅ Cloudflare (cloudflare.com)](https://www.cloudflare.com/)
--   [✅ Dependabot (docs.github.com)](https://docs.github.com/en/code-security/dependabot)
--   [✅ GitHub Actions (github.com)](https://github.com/features/actions)
--   [✅ Hover (hover.com)](https://www.hover.com/)
--   [✅ Husky (typicode.github.io)](https://typicode.github.io/husky/#/)
--   [✅ Node Version Manager (github.com)](https://github.com/nvm-sh/nvm)
--   [✅ NodeJS (nodejs.org)](https://nodejs.org/en/)
--   [✅ PNPM (pnpm.io)](https://pnpm.io/)
--   [✅ Prettier (prettier.io)](https://prettier.io/)
--   [✅ Redirect Pizza (redirect.pizza)](https://redirect.pizza/)
+-   [Cloudflare (cloudflare.com)](https://www.cloudflare.com/)
+-   [Dependabot (docs.github.com)](https://docs.github.com/en/code-security/dependabot)
+-   [GitHub Actions (github.com)](https://github.com/features/actions)
+-   [Hover (hover.com)](https://www.hover.com/)
+-   [Husky (typicode.github.io)](https://typicode.github.io/husky/#/)
+-   [Node Version Manager (github.com)](https://github.com/nvm-sh/nvm)
+-   [NodeJS (nodejs.org)](https://nodejs.org/en/)
+-   [PNPM (pnpm.io)](https://pnpm.io/)
+-   [Prettier (prettier.io)](https://prettier.io/)
+-   [Redirect Pizza (redirect.pizza)](https://redirect.pizza/)
 
 ## Security
 

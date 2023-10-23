@@ -1,6 +1,6 @@
 ---
 title: "Go Homebrew Package"
-date: "2023-10-18"
+date: "2023-10-23"
 author: "Daniel Tedman"
 description: "Go is an excellent language for writing command line tools, and Homebrew is the de facto package manager for macOS. This guide provides step by step instructions on how to get from go source code to published homebrew package."
 topics: ["Go", "Guide", "Homebrew", "Go Releaser", "GitHub Actions"]
