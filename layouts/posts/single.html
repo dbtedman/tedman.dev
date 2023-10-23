@@ -2,6 +2,8 @@
     <article>
         <nav class="breadcrumbs">
             <a href="/">Home</a>
+            <span>//</span>
+            <span>Posts</span>
         </nav>
 
         <h1>{{ .Title }}</h1>
@@ -14,6 +16,11 @@
         <section class="abstract">
             <p>{{ .Description }}</p>
         </section>
+
+        <section class="toc">
+            {{ .TableOfContents }}
+        </section>
+
         <section>{{- .Content -}}</section>
     </article>
 {{- end -}}

@@ -1,12 +1,7 @@
-$background-dark: #1f1e1d;
-$background-light: #fff;
-$foreground-dark: #fff;
-$foreground-light: #1f1e1d;
-$primary-dark-alt: #b69380;
-$primary-dark: #947767;
-$primary-light-alt: #775641;
-$primary-light: #694f3f;
 $mobile-break: 600px;
+
+@import "colours";
+@import "syntax";
 
 html,
 body {
@@ -227,5 +222,33 @@ body > footer {
         a {
             margin-right: 0.5rem;
         }
+    }
+}
+
+blockquote {
+    border-left: 1px solid $code-dark;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: $code-dark-foreground;
+    font-size: 1rem;
+
+    p {
+        margin: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        border-left-color: $code-light;
+        background-color: $code-light-foreground;
+    }
+}
+
+p > code,
+td > code {
+    background-color: $primary-dark;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $primary-light;
     }
 }

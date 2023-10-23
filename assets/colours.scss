@@ -1,0 +1,13 @@
+$background-dark: #1f1e1d;
+$background-light: #fff;
+$foreground-dark: #fff;
+$foreground-light: #1f1e1d;
+$primary-dark-alt: #b69380;
+$primary-dark: #947767;
+$primary-light-alt: #775641;
+$primary-light: #694f3f;
+
+$code-dark: lighten($background-dark, 2);
+$code-dark-foreground: #eee;
+$code-light: darken($background-light, 2);
+$code-light-foreground: #333;
