@@ -64,6 +64,7 @@ An [A+ Security Report Summary (securityheaders.com)](https://securityheaders.co
 
 -   [digitalgov.gov (github.com)](https://github.com/GSA/digitalgov.gov/tree/main)
 -   [Feed Validation Service (validator.w3.org)](https://validator.w3.org/feed/check.cgi)
+-   [Google Search Console (search.google.com)](https://search.google.com/search-console)
 -   [HTML Validation Service (validator.w3.org)](https://validator.w3.org)
 -   [HTML5 Boilerplate (html5boilerplate.com)](https://html5boilerplate.com)
 -   [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
