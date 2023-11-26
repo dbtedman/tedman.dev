@@ -37,7 +37,7 @@
     <nav>
         <a href="{{- "topics" | absURL -}}">topics</a>
         {{ with .Site.Home.OutputFormats.Get "rss" -}}
-            <a href="{{ .Permalink }}">rss</a>
+            <a href="{{ .Permalink }}" rel="alternate" type="application/rss+xml">rss</a>
         {{ end }}
         <a href="{{- ".well-known/security.txt" | absURL -}}">security.txt</a>
         <a href="{{- "humans.txt" | absURL -}}">humans.txt</a>
