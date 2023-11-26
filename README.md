@@ -62,13 +62,14 @@ An [A+ Security Report Summary (securityheaders.com)](https://securityheaders.co
 
 > 💡 Resources referenced during the development of this project.
 
+-   [digitalgov.gov (github.com)](https://github.com/GSA/digitalgov.gov/tree/main)
 -   [Feed Validation Service (validator.w3.org)](https://validator.w3.org/feed/check.cgi)
+-   [HTML Validation Service (validator.w3.org)](https://validator.w3.org)
 -   [HTML5 Boilerplate (html5boilerplate.com)](https://html5boilerplate.com)
 -   [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
 -   [Internet.nl: Website test (en.internet.nl)](https://en.internet.nl/test-site/)
 -   [Security Headers (securityheaders.com)](https://securityheaders.com)
 -   [security.txt (securitytxt.org)](https://securitytxt.org)
--   [digitalgov.gov (github.com)](https://github.com/GSA/digitalgov.gov/tree/main)
 
 ## License
 
