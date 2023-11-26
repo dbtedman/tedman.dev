@@ -46,6 +46,7 @@ make format
 -   [PNPM (pnpm.io)](https://pnpm.io/)
 -   [Prettier (prettier.io)](https://prettier.io/)
 -   [Redirect Pizza (redirect.pizza)](https://redirect.pizza/)
+-   [Umami Analytics (umami.is)](https://umami.is)
 
 ## Security
 
