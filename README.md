@@ -36,6 +36,7 @@ make format
 
 ### Stack
 
+-   [Bing Webmaster Tools (www.bing.com)](https://www.bing.com/webmasters)
 -   [Cloudflare (cloudflare.com)](https://www.cloudflare.com/)
 -   [Dependabot (docs.github.com)](https://docs.github.com/en/code-security/dependabot)
 -   [GitHub Actions (github.com)](https://github.com/features/actions)
