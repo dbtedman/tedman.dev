@@ -20,17 +20,8 @@
           href="/favicon-16x16.png">
     <link rel="manifest"
           href="/site.webmanifest">
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com"/>
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin/>
     {{- $style := resources.Get "app.scss" | toCSS | minify | resources.Fingerprint "sha256" }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-        rel="stylesheet"
-    />
     <link rel="sitemap"
           type="application/xml"
           href="{{- "sitemap.xml" | absURL -}}"/>
