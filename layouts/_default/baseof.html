@@ -38,6 +38,7 @@
         {{ printf `<link rel=%q type=%q href=%q title=%q />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
     <link type="text/plain" rel="author" href="{{- "humans.txt" | absURL -}}" />
+    <script async src="https://analytics.eu.umami.is/script.js" data-website-id="b9e86c3d-5242-45d7-bb0d-96106efe9149"></script>
 </head>
 <body>
 <main>{{ block "content" . }}{{ end }}</main>
