@@ -36,7 +36,6 @@ make format
 
 ### Stack
 
--   [Bing Webmaster Tools (www.bing.com)](https://www.bing.com/webmasters)
 -   [Cloudflare (cloudflare.com)](https://www.cloudflare.com/)
 -   [Dependabot (docs.github.com)](https://docs.github.com/en/code-security/dependabot)
 -   [GitHub Actions (github.com)](https://github.com/features/actions)
@@ -63,6 +62,7 @@ An [A+ Security Report Summary (securityheaders.com)](https://securityheaders.co
 
 > 💡 Resources referenced during the development of this project.
 
+-   [Bing Webmaster Tools (www.bing.com)](https://www.bing.com/webmasters)
 -   [digitalgov.gov (github.com)](https://github.com/GSA/digitalgov.gov/tree/main)
 -   [Feed Validation Service (validator.w3.org)](https://validator.w3.org/feed/check.cgi)
 -   [Google Search Console (search.google.com)](https://search.google.com/search-console)
