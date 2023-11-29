@@ -7,29 +7,131 @@
     <title>{{ .Title }}</title>
     <meta name="description"
           content="{{ .Description }}"/>
-    <link rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png">
-    <link rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png">
-    <link rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png">
-    <link rel="manifest"
-          href="/site.webmanifest">
+
+    {{ with resources.Get "favicon-1200.png" }}
+        {{ with .Resize "16x16" }}
+            {{ with .Content | resources.FromString "/favicon-16x16.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="icon" type="image/png" sizes="16x16" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "32x32" }}
+            {{ with .Content | resources.FromString "/favicon-32x32.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="icon" type="image/png" sizes="32x32" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "57x57" }}
+            {{ with .Content | resources.FromString "/favicon-57x57.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="57x57" href="{{ .RelPermalink }}">
+                <link rel="icon" type="image/png" href="{{ .RelPermalink }}" sizes="57x57">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "60x60" }}
+            {{ with .Content | resources.FromString "/favicon-60x60.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="60x60" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "72x72" }}
+            {{ with .Content | resources.FromString "/favicon-72x72.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="72x72" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "76x76" }}
+            {{ with .Content | resources.FromString "/favicon-76x76.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="76x76" href="{{ .RelPermalink }}">
+                <link rel="icon" type="image/png" href="{{ .RelPermalink }}" sizes="76x76">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "96x96" }}
+            {{ with .Content | resources.FromString "/favicon-96x96.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="icon" type="image/png" sizes="96x96" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "114x114" }}
+            {{ with .Content | resources.FromString "/favicon-114x114.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="114x114" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "120x120" }}
+            {{ with .Content | resources.FromString "/favicon-120x120.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="120x120" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "128x128" }}
+            {{ with .Content | resources.FromString "/favicon-128x128.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="icon" type="image/png" href="{{ .RelPermalink }}" sizes="128x128">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "144x144" }}
+            {{ with .Content | resources.FromString "/favicon-144x144.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="144x144" href="{{ .RelPermalink }}">
+                <meta name="msapplication-TileImage" content="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "152x152" }}
+            {{ with .Content | resources.FromString "/favicon-152x152.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="152x152" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "180x180" }}
+            {{ with .Content | resources.FromString "/favicon-180x180.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "192x192" }}
+            {{ with .Content | resources.FromString "/favicon-192x192.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="icon" type="image/png" sizes="192x192" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "196x196" }}
+            {{ with .Content | resources.FromString "/favicon-196x196.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="shortcut icon" sizes="196x196" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+
+        {{ with .Resize "228x228" }}
+            {{ with .Content | resources.FromString "/favicon-228x228.min.png" | resources.Fingerprint "sha256" }}
+                <link rel="icon" type="image/png" sizes="228x228" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{/* TODO: Needs to be created from template so we can include hashed urls for linked assets. */}}
+    {{ with resources.Get "site.webmanifest" }}
+        {{ with . | fingerprint "sha256" }}
+            <link rel="manifest"
+                  href="{{ .RelPermalink }}">
+        {{ end }}
+    {{ end }}
+
     {{- $style := resources.Get "app.scss" | toCSS | minify | resources.Fingerprint "sha256" }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
     <link rel="sitemap"
           type="application/xml"
           href="{{- "sitemap.xml" | absURL -}}"/>
+
     {{ with .Site.Home.OutputFormats.Get "rss" -}}
         {{ printf `<link rel=%q type=%q href=%q title=%q />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
-    <link type="text/plain" rel="author" href="{{- "humans.txt" | absURL -}}" />
-    <script async src="https://analytics.eu.umami.is/script.js" data-website-id="b9e86c3d-5242-45d7-bb0d-96106efe9149"></script>
+
+    <link type="text/plain" rel="author" href="{{- "humans.txt" | absURL -}}"/>
+
+    <script async src="https://analytics.eu.umami.is/script.js"
+            data-website-id="b9e86c3d-5242-45d7-bb0d-96106efe9149"></script>
 </head>
 <body>
 <main>{{ block "content" . }}{{ end }}</main>
