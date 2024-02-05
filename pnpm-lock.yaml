@@ -7,13 +7,13 @@ settings:
 devDependencies:
   '@prettier/plugin-xml':
     specifier: 3.2.2
-    version: 3.2.2(prettier@3.1.1)
+    version: 3.2.2(prettier@3.2.5)
   husky:
     specifier: 9.0.10
     version: 9.0.10
   prettier:
-    specifier: 3.1.1
-    version: 3.1.1
+    specifier: 3.2.5
+    version: 3.2.5
   sort-package-json:
     specifier: 2.7.0
     version: 2.7.0
@@ -41,13 +41,13 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@prettier/plugin-xml@3.2.2(prettier@3.1.1):
+  /@prettier/plugin-xml@3.2.2(prettier@3.2.5):
     resolution: {integrity: sha512-SoE70SQF1AKIvK7LVK80JcdAe6wrDcbodFFjcoqb1FkOqV0G0oSlgAFDwoRXPqkUE5p/YF2nGsnUbnfm6471sw==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
       '@xml-tools/parser': 1.0.11
-      prettier: 3.1.1
+      prettier: 3.2.5
     dev: true
 
   /@xml-tools/parser@1.0.11:
@@ -193,8 +193,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /prettier@3.1.1:
-    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
