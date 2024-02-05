@@ -6,17 +6,14 @@ $mobile-break: 600px;
 html,
 body {
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Atkinson Hyperlegible", sans-serif;
     line-height: 1.8rem;
-    font-weight: 300;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     background-color: $background-light;
     color: $foreground-light;
-}
 
-@media (prefers-color-scheme: dark) {
-    html,
-    body {
+    @media (prefers-color-scheme: dark) {
         background-color: $background-dark;
         color: $foreground-dark;
     }
@@ -26,9 +23,8 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
     margin: 0;
     color: $primary-light;
 }
@@ -144,7 +140,7 @@ article {
             color: $primary-light;
             padding: 0 0.5rem;
             display: inline-block;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             margin-right: 1rem;
 
             @media (prefers-color-scheme: dark) {
@@ -157,7 +153,7 @@ article {
             color: $primary-light;
             padding: 0 0.5rem;
             display: inline-block;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             margin-right: 1rem;
 
             a {
@@ -191,7 +187,7 @@ table {
 
 th,
 td {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.2rem 0.4rem;
 }
 
@@ -246,10 +242,15 @@ blockquote {
 p > code,
 td > code {
     background-color: $primary-dark;
-    font-size: 0.8rem;
+    color: #fff;
+    font-size: 0.9rem;
     padding: 0.2rem 0.4rem;
 
     @media (prefers-color-scheme: dark) {
         background-color: $primary-light;
     }
+}
+
+.font-usage {
+    margin-top: 2rem;
 }
