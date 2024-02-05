@@ -3,7 +3,7 @@ title: "Accretion (The Beginning)"
 date: "2023-10-24"
 author: "Daniel Tedman"
 description: "Manage internal technical documentation that is enriched with live data accreted from your environment."
-topics: ["accretion", "owasp"]
+topics: ["Accretion", "owasp"]
 ---
 
 ## The Problem

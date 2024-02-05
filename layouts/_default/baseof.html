@@ -8,6 +8,10 @@
     <meta name="description"
           content="{{ .Description }}"/>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     {{ with resources.Get "favicon-1200.png" }}
         {{ with .Resize "16x16" }}
             {{ with .Content | resources.FromString "/favicon-16x16.min.png" | resources.Fingerprint "sha256" }}
@@ -136,6 +140,7 @@
 <body>
 <main>{{ block "content" . }}{{ end }}</main>
 <footer>
+    <p class="font-usage">This site uses <a href="{{- "posts/atkinson-hyperlegible/" | absURL -}}">Atkinson Hyperlegible</a> to ensure content is accessible to as many people as possible.</p>
     <nav>
         <a href="{{- "topics" | absURL -}}">topics</a>
         {{ with .Site.Home.OutputFormats.Get "rss" -}}
