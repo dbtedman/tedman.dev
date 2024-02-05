@@ -7,7 +7,9 @@ $primary-dark: #947767;
 $primary-light-alt: #775641;
 $primary-light: #694f3f;
 
-$code-dark: lighten($background-dark, 2);
-$code-dark-foreground: #eee;
-$code-light: darken($background-light, 2);
-$code-light-foreground: #333;
+$code-dark: $background-dark;
+$code-dark-foreground: $background-light;
+$code-light: $background-light;
+$code-light-border: $primary-dark;
+$code-dark-border: $primary-light;
+$code-light-foreground: $foreground-light;
