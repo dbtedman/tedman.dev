@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "format": "sort-package-json && prettier . --write",
-    "lint": "sort-package-json --check && prettier . --check"
+    "lint": "sort-package-json --check && prettier . --check",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "3.2.2",
