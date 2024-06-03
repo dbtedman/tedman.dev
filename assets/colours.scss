@@ -1,15 +1,26 @@
-$background-dark: #1f1e1d;
-$background-light: #fff;
-$foreground-dark: #fff;
-$foreground-light: #1f1e1d;
-$primary-dark-alt: #b69380;
-$primary-dark: #947767;
-$primary-light-alt: #775641;
-$primary-light: #694f3f;
+$dark-background: hsl(180, 20%, 15%);
+$light-background: hsl(180, 20%, 95%);
 
-$code-dark: $background-dark;
-$code-dark-foreground: $background-light;
-$code-light: $background-light;
-$code-light-border: $primary-dark;
-$code-dark-border: $primary-light;
-$code-light-foreground: $foreground-light;
+$dark-foreground: hsl(180, 59%, 89%);
+$light-foreground: hsl(192, 23%, 26%);
+
+$light-foreground-brown: hsl(25, 100%, 30%);
+$dark-foreground-brown: hsl(25, 100%, 60%);
+
+$light-foreground-red: hsl(1, 100%, 30%);
+$dark-foreground-red: hsl(1, 100%, 60%);
+
+$light-foreground-green: hsl(150, 100%, 30%);
+$dark-foreground-green: hsl(150, 100%, 60%);
+
+$light-foreground-blue: hsl(200, 100%, 40%);
+$dark-foreground-blue: hsl(200, 100%, 60%);
+
+$light-foreground-yellow: hsl(50, 100%, 30%);
+$dark-foreground-yellow: hsl(50, 100%, 60%);
+
+$light-foreground-pink: hsl(300, 100%, 30%);
+$dark-foreground-pink: hsl(300, 100%, 60%);
+
+$light-foreground-purple: hsl(270, 100%, 30%);
+$dark-foreground-purple: hsl(270, 100%, 60%);

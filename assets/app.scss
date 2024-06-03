@@ -10,12 +10,12 @@ body {
     line-height: 1.8rem;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
-    background-color: $background-light;
-    color: $foreground-light;
+    background-color: $light-background;
+    color: $light-foreground;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $background-dark;
-        color: $foreground-dark;
+        background-color: $dark-background;
+        color: $dark-foreground;
     }
 }
 
@@ -26,7 +26,6 @@ h4 {
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-weight: 700;
     margin: 0;
-    color: $primary-light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,32 +33,24 @@ h4 {
     h2,
     h3,
     h4 {
-        color: $primary-dark;
+        //color: $dark-foreground;
     }
 }
 
 a {
-    color: $primary-light-alt;
+    color: $light-foreground-blue;
     text-underline-offset: 0.2em;
     text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
     a {
-        color: $primary-dark-alt;
+        color: $dark-foreground-blue;
     }
 }
 
 strong {
     font-weight: 500;
-    color: $primary-light-alt;
-}
-
-@media (prefers-color-scheme: dark) {
-    strong {
-        font-weight: 500;
-        color: $primary-dark-alt;
-    }
 }
 
 h1 {
@@ -114,8 +105,8 @@ nav.external {
 }
 
 .abstract {
-    border-top: 1px solid $primary-light-alt;
-    border-bottom: 1px solid $primary-light-alt;
+    border-top: 1px solid $light-foreground;
+    border-bottom: 1px solid $light-foreground;
     padding: 2rem;
     margin-left: -2rem;
     margin-right: -2rem;
@@ -123,8 +114,8 @@ nav.external {
 
 @media (prefers-color-scheme: dark) {
     .abstract {
-        border-top-color: $primary-dark-alt;
-        border-bottom-color: $primary-dark-alt;
+        border-top-color: $dark-foreground;
+        border-bottom-color: $dark-foreground;
     }
 }
 
@@ -136,21 +127,21 @@ section {
 article {
     .metadata {
         .date {
-            border: 1px solid $primary-light;
-            color: $primary-light;
+            border: 1px solid $light-foreground-green;
+            color: $light-foreground-green;
             padding: 0 0.5rem;
             display: inline-block;
-            font-size: 0.9rem;
+            font-size: 1rem;
             margin-right: 1rem;
 
             @media (prefers-color-scheme: dark) {
-                border-color: $primary-dark;
-                color: $primary-dark;
+                border-color: $dark-foreground-green;
+                color: $dark-foreground-green;
             }
         }
 
         .topics {
-            color: $primary-light;
+            color: $light-foreground;
             padding: 0 0.5rem;
             display: inline-block;
             font-size: 0.9rem;
@@ -167,8 +158,8 @@ article {
             }
 
             @media (prefers-color-scheme: dark) {
-                border-color: $primary-dark;
-                color: $primary-dark;
+                border-color: $dark-foreground;
+                color: $dark-foreground;
             }
         }
     }
@@ -177,8 +168,12 @@ article {
 table,
 th,
 td {
-    border: 1px solid $primary-dark;
+    border: 1px solid $light-foreground;
     border-collapse: collapse;
+
+    @media (prefers-color-scheme: dark) {
+        border-color: $dark-foreground;
+    }
 }
 
 table {
@@ -195,18 +190,22 @@ td {
     margin-bottom: 1rem;
 
     > span {
-        color: $primary-light-alt;
+        color: $light-foreground;
 
         @media (prefers-color-scheme: dark) {
-            color: $primary-dark-alt;
+            color: $dark-foreground;
         }
     }
 }
 
 body > footer {
-    border-top: 1px solid $primary-dark;
+    border-top: 1px solid $light-foreground;
     max-width: 40rem;
     margin: 0 auto;
+
+    @media (prefers-color-scheme: dark) {
+        border-top-color: $dark-foreground;
+    }
 
     nav {
         padding: 1rem 0 8rem 0;
@@ -223,10 +222,10 @@ body > footer {
 }
 
 blockquote {
-    border-left: 1px solid $code-dark;
+    border-left: 1px solid $light-foreground;
     margin: 0 0 1rem 0;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
-    background-color: $code-dark-foreground;
+    background-color: $light-background;
     font-size: 1rem;
 
     p {
@@ -234,20 +233,21 @@ blockquote {
     }
 
     @media (prefers-color-scheme: dark) {
-        border-left-color: $code-light;
-        background-color: $code-light-foreground;
+        border-left-color: $dark-foreground;
+        background-color: $dark-background;
     }
 }
 
 p > code,
 td > code {
-    background-color: $primary-dark;
-    color: #fff;
+    background-color: $light-background;
+    color: $light-foreground;
     font-size: 0.9rem;
     padding: 0.2rem 0.4rem;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $primary-light;
+        background-color: $dark-background;
+        color: $dark-foreground;
     }
 }
 
