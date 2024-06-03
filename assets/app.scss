@@ -199,12 +199,12 @@ td {
 }
 
 body > footer {
-    border-top: 1px solid $light-foreground;
     max-width: 40rem;
     margin: 0 auto;
+    padding: 2rem 4rem;
 
-    @media (prefers-color-scheme: dark) {
-        border-top-color: $dark-foreground;
+    @media (max-width: $mobile-break) {
+        padding: 1rem 2rem;
     }
 
     nav {
