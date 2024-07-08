@@ -1,98 +1,96 @@
 @import "colours";
 
 %code-line-numbers {
-    color: #7f7f7f;
+    color: $light-foreground;
     @media (prefers-color-scheme: dark) {
-        color: #7f7f7f;
+        color: $dark-foreground;
     }
 }
 
 %code-gray {
-    background-color: #3c3d38;
+    color: $light-foreground;
     @media (prefers-color-scheme: dark) {
-        background-color: #3c3d38;
+        color: $dark-foreground;
     }
 }
 
 %code-brown {
-    color: #75715e;
+    color: $light-foreground-brown;
     @media (prefers-color-scheme: dark) {
-        color: #ab9965;
+        color: $dark-foreground-brown;
     }
 }
 
 %code-red {
-    color: #960050;
-    background-color: #1e0010;
+    color: $light-foreground-red;
     @media (prefers-color-scheme: dark) {
-        color: #960050;
-        background-color: #1e0010;
+        color: $dark-foreground-red;
     }
 }
 
 %code-green {
-    color: #6a9d04;
+    color: $light-foreground-green;
     @media (prefers-color-scheme: dark) {
-        color: #a6e22e;
+        color: $dark-foreground-green;
     }
 }
 
 %code-blue {
-    color: #66d9ef;
+    color: $light-foreground-blue;
     @media (prefers-color-scheme: dark) {
-        color: #66d9ef;
+        color: $dark-foreground-blue;
     }
 }
 
 %code-yellow {
-    color: #c7a420;
+    color: $light-foreground-yellow;
     @media (prefers-color-scheme: dark) {
-        color: #fce364;
+        color: $dark-foreground-yellow;
     }
 }
 
 %code-pink {
-    color: #ff0053;
+    color: $light-foreground-pink;
     @media (prefers-color-scheme: dark) {
-        color: #ff6b9a;
+        color: $dark-foreground-pink;
     }
 }
 
 %code-purple {
-    color: #6d3ade;
+    color: $light-foreground-purple;
     @media (prefers-color-scheme: dark) {
-        color: #b289ff;
+        color: $dark-foreground-purple;
     }
 }
 
 /* Background */
 .bg {
-    color: $code-light-foreground;
-    background-color: $code-light;
+    color: $light-foreground;
+    background-color: $light-background;
 
     @media (prefers-color-scheme: dark) {
-        color: $code-dark-foreground;
-        background-color: $code-dark;
+        color: $dark-foreground;
+        background-color: $dark-background;
     }
 }
 
 /* PreWrapper */
 .chroma {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
     font-family: monospace;
-    color: $code-light-foreground;
-    background-color: $code-light;
+    color: $light-foreground;
+    background-color: $light-background;
     margin-left: -2rem;
     margin-right: -2rem;
     overflow-x: scroll;
-    border: 1px solid $code-light-border;
-    border-left: 10px solid $code-light-border;
+    border: 1px solid $light-foreground;
+    border-left: 10px solid $light-foreground;
 
     @media (prefers-color-scheme: dark) {
-        color: $code-dark-foreground;
-        background-color: $code-dark;
-        border-color: $code-dark-border;
+        color: $dark-foreground;
+        background-color: $dark-background;
+        border-color: $dark-foreground;
     }
 }
 
