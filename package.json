@@ -9,6 +9,6 @@
     "@prettier/plugin-xml": "3.4.1",
     "husky": "9.1.4",
     "prettier": "3.3.3",
-    "sort-package-json": "2.10.0"
+    "sort-package-json": "2.10.1"
   }
 }
