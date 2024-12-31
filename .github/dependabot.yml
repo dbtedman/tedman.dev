@@ -4,7 +4,15 @@ updates:
       directory: "/"
       schedule:
           interval: "weekly"
+      groups:
+          github-actions:
+              applies-to: "version-updates"
+              patterns: ["*"]
     - package-ecosystem: "npm"
       directory: "/"
       schedule:
           interval: "weekly"
+      groups:
+          npm:
+              applies-to: "version-updates"
+              patterns: ["*"]
