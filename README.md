@@ -5,12 +5,12 @@
 
 Hugo source code for [https://tedman.dev](https://tedman.dev).
 
--   [Getting Started](#getting-started)
--   [Verification](#verification)
--   [Design](#design)
--   [Security](#security)
--   [References](#references)
--   [License](#license)
+- [Getting Started](#getting-started)
+- [Verification](#verification)
+- [Design](#design)
+- [Security](#security)
+- [References](#references)
+- [License](#license)
 
 ## Getting Started
 
@@ -36,17 +36,17 @@ make format
 
 ### Stack
 
--   [Cloudflare (cloudflare.com)](https://www.cloudflare.com/)
--   [Dependabot (docs.github.com)](https://docs.github.com/en/code-security/dependabot)
--   [GitHub Actions (github.com)](https://github.com/features/actions)
--   [Hover (hover.com)](https://www.hover.com/)
--   [Husky (typicode.github.io)](https://typicode.github.io/husky/#/)
--   [Node Version Manager (github.com)](https://github.com/nvm-sh/nvm)
--   [NodeJS (nodejs.org)](https://nodejs.org/en/)
--   [PNPM (pnpm.io)](https://pnpm.io/)
--   [Prettier (prettier.io)](https://prettier.io/)
--   [Redirect Pizza (redirect.pizza)](https://redirect.pizza/)
--   [Umami Analytics (umami.is)](https://umami.is)
+- [Cloudflare (cloudflare.com)](https://www.cloudflare.com/)
+- [Dependabot (docs.github.com)](https://docs.github.com/en/code-security/dependabot)
+- [GitHub Actions (github.com)](https://github.com/features/actions)
+- [Hover (hover.com)](https://www.hover.com/)
+- [Husky (typicode.github.io)](https://typicode.github.io/husky/#/)
+- [Node Version Manager (github.com)](https://github.com/nvm-sh/nvm)
+- [NodeJS (nodejs.org)](https://nodejs.org/en/)
+- [PNPM (pnpm.io)](https://pnpm.io/)
+- [Prettier (prettier.io)](https://prettier.io/)
+- [Redirect Pizza (redirect.pizza)](https://redirect.pizza/)
+- [Umami Analytics (umami.is)](https://umami.is)
 
 ## Security
 
@@ -62,16 +62,16 @@ An [A+ Security Report Summary (securityheaders.com)](https://securityheaders.co
 
 > 💡 Resources referenced during the development of this project.
 
--   [Bing Webmaster Tools (www.bing.com)](https://www.bing.com/webmasters)
--   [digitalgov.gov (github.com)](https://github.com/GSA/digitalgov.gov/tree/main)
--   [Feed Validation Service (validator.w3.org)](https://validator.w3.org/feed/check.cgi)
--   [Google Search Console (search.google.com)](https://search.google.com/search-console)
--   [HTML Validation Service (validator.w3.org)](https://validator.w3.org)
--   [HTML5 Boilerplate (html5boilerplate.com)](https://html5boilerplate.com)
--   [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
--   [Internet.nl: Website test (en.internet.nl)](https://en.internet.nl/test-site/)
--   [Security Headers (securityheaders.com)](https://securityheaders.com)
--   [security.txt (securitytxt.org)](https://securitytxt.org)
+- [Bing Webmaster Tools (www.bing.com)](https://www.bing.com/webmasters)
+- [digitalgov.gov (github.com)](https://github.com/GSA/digitalgov.gov/tree/main)
+- [Feed Validation Service (validator.w3.org)](https://validator.w3.org/feed/check.cgi)
+- [Google Search Console (search.google.com)](https://search.google.com/search-console)
+- [HTML Validation Service (validator.w3.org)](https://validator.w3.org)
+- [HTML5 Boilerplate (html5boilerplate.com)](https://html5boilerplate.com)
+- [Hugo Documentation (gohugo.io)](https://gohugo.io/documentation/)
+- [Internet.nl: Website test (en.internet.nl)](https://en.internet.nl/test-site/)
+- [Security Headers (securityheaders.com)](https://securityheaders.com)
+- [security.txt (securitytxt.org)](https://securitytxt.org)
 
 ## License
 
