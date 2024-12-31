@@ -12,11 +12,11 @@ To allow for installing our go binary `aquamarine` on macOS using Homebrew.
 
 ## Assumptions
 
--   A go project exists with a functional binary.
--   GitHub Actions will be used for automating the release.
--   Go Releaser will be used to coordinate the go build.
--   A Homebrew Tap will be used, instead of publishing via the [homebrew-core](https://github.com/Homebrew/homebrew-core)
-    repository.
+- A go project exists with a functional binary.
+- GitHub Actions will be used for automating the release.
+- Go Releaser will be used to coordinate the go build.
+- A Homebrew Tap will be used, instead of publishing via the [homebrew-core](https://github.com/Homebrew/homebrew-core)
+  repository.
 
 ## Go Releaser Build
 
